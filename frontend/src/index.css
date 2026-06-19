@@ -2,32 +2,60 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ─── Nirukta Global Font ─── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
 :root {
-  --color-background: #E8F0DE;
-  --color-dashlet: #FDF0E2;
-  --color-text: #44546A;
+  --font:          'Inter', 'Segoe UI', sans-serif;
+
+  /* Nirukta design tokens */
+  --color-bg:      #E8F0DE;
   --color-surface: #FFFFFF;
-  --color-border: #D5DCE8;
+  --color-dashlet: #FDF0E2;
+  --color-text:    #44546A;
+  --color-border:  #D5DCE8;
   --color-healthy: #639922;
   --color-warning: #BA7517;
-  --color-error: #C0392B;
+  --color-error:   #C0392B;
+
+  /* Type scale */
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 13px;
+  --text-md:   15px;
+  --text-lg:   18px;
+  --text-xl:   22px;
+  --text-2xl:  28px;
 }
 
-* {
+/* Apply font globally — every element inherits */
+*, *::before, *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
-  background-color: var(--color-background);
+  background: var(--color-bg);
   color: var(--color-text);
-  margin: 0;
-  padding: 0;
+  font-size: var(--text-base);
+  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
+/* Inputs and buttons inherit font — browsers don't do this by default */
+input, button, textarea, select {
+  font-family: var(--font);
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+button { cursor: pointer; }
+a { color: inherit; }
+
 /* Scrollbar */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: #C8D5DC; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #44546A; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-text); }

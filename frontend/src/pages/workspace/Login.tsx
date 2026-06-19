@@ -28,52 +28,69 @@ export default function Login() {
       minHeight: "100vh",
       background: "#E8F0DE",
       display: "flex",
+      flexDirection: "column",
       alignItems: "center",
       justifyContent: "center",
-      fontFamily: "'Inter', 'Segoe UI', sans-serif",
     }}>
+
+      {/* Logo — sits above the card, centered */}
+      <div style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 10,
+        marginBottom: 24,
+      }}>
+        <div style={{
+          width: 34,
+          height: 34,
+          background: "#FDF0E2",
+          borderRadius: 8,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+          <span style={{
+            fontSize: 15,
+            fontWeight: 600,
+            color: "#44546A",
+          }}>N</span>
+        </div>
+        <span style={{
+          fontSize: 18,
+          fontWeight: 500,
+          color: "#44546A",
+          letterSpacing: "0.06em",
+        }}>
+          NIRUKTA
+        </span>
+      </div>
+
+      {/* Card */}
       <div style={{
         background: "#ffffff",
         borderRadius: 12,
-        padding: "40px",
+        padding: "36px 40px",
         width: "100%",
-        maxWidth: 380,
+        maxWidth: 360,
         border: "0.5px solid #D5DCE8",
       }}>
 
-        {/* Logo */}
-        <div style={{
-          display: "flex", alignItems: "center",
-          gap: 10, marginBottom: 32,
-        }}>
-          <div style={{
-            width: 32, height: 32,
-            background: "#FDF0E2",
-            borderRadius: 6,
-            display: "flex", alignItems: "center",
-            justifyContent: "center",
-          }}>
-            <span style={{
-              fontSize: 14, fontWeight: 600,
-              color: "#44546A",
-            }}>N</span>
-          </div>
-          <span style={{
-            fontSize: 16, fontWeight: 500,
-            color: "#44546A", letterSpacing: "0.04em",
-          }}>NIRUKTA</span>
-        </div>
-
         {/* Heading */}
         <h2 style={{
-          fontSize: 20, fontWeight: 500,
-          color: "#44546A", margin: "0 0 4px",
+          fontSize: 18,
+          fontWeight: 500,
+          color: "#44546A",
+          margin: "0 0 4px",
+          textAlign: "center",
         }}>
           Welcome back
         </h2>
         <p style={{
-          fontSize: 13, color: "#44546A",
-          opacity: 0.5, margin: "0 0 28px",
+          fontSize: 13,
+          color: "#44546A",
+          opacity: 0.45,
+          margin: "0 0 28px",
+          textAlign: "center",
         }}>
           Sign in to your workspace
         </p>
@@ -84,8 +101,10 @@ export default function Login() {
           {/* Email */}
           <div style={{ marginBottom: 14 }}>
             <label style={{
-              display: "block", fontSize: 12,
-              fontWeight: 500, color: "#44546A",
+              display: "block",
+              fontSize: 12,
+              fontWeight: 500,
+              color: "#44546A",
               marginBottom: 6,
             }}>
               Email
@@ -93,10 +112,7 @@ export default function Login() {
             <input
               type="email"
               value={email}
-              onChange={(e) => {
-                setEmail(e.target.value)
-                setError("")
-              }}
+              onChange={(e) => { setEmail(e.target.value); setError("") }}
               placeholder="you@company.com"
               autoFocus
               style={{
@@ -109,7 +125,6 @@ export default function Login() {
                 color: "#44546A",
                 outline: "none",
                 boxSizing: "border-box",
-                fontFamily: "inherit",
               }}
               onFocus={(e) => (e.target.style.borderColor = "#44546A")}
               onBlur={(e) => (e.target.style.borderColor = "#D5DCE8")}
@@ -117,14 +132,15 @@ export default function Login() {
           </div>
 
           {/* Password */}
-          <div style={{ marginBottom: 20 }}>
+          <div style={{ marginBottom: error ? 8 : 22 }}>
             <div style={{
               display: "flex",
               justifyContent: "space-between",
               marginBottom: 6,
             }}>
               <label style={{
-                fontSize: 12, fontWeight: 500,
+                fontSize: 12,
+                fontWeight: 500,
                 color: "#44546A",
               }}>
                 Password
@@ -132,10 +148,13 @@ export default function Login() {
               <button
                 type="button"
                 style={{
-                  fontSize: 12, color: "#44546A",
-                  opacity: 0.45, background: "none",
-                  border: "none", cursor: "pointer",
-                  padding: 0, fontFamily: "inherit",
+                  fontSize: 12,
+                  color: "#44546A",
+                  opacity: 0.45,
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  padding: 0,
                 }}
               >
                 Forgot password?
@@ -145,10 +164,7 @@ export default function Login() {
               <input
                 type={showPassword ? "text" : "password"}
                 value={password}
-                onChange={(e) => {
-                  setPassword(e.target.value)
-                  setError("")
-                }}
+                onChange={(e) => { setPassword(e.target.value); setError("") }}
                 placeholder="••••••••"
                 style={{
                   width: "100%",
@@ -160,7 +176,6 @@ export default function Login() {
                   color: "#44546A",
                   outline: "none",
                   boxSizing: "border-box",
-                  fontFamily: "inherit",
                 }}
                 onFocus={(e) => (e.target.style.borderColor = "#44546A")}
                 onBlur={(e) => (e.target.style.borderColor = "#D5DCE8")}
@@ -169,12 +184,17 @@ export default function Login() {
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
                 style={{
-                  position: "absolute", right: 12,
-                  top: "50%", transform: "translateY(-50%)",
-                  background: "none", border: "none",
-                  cursor: "pointer", fontSize: 11,
-                  color: "#44546A", opacity: 0.4,
-                  fontFamily: "inherit", padding: 0,
+                  position: "absolute",
+                  right: 12,
+                  top: "50%",
+                  transform: "translateY(-50%)",
+                  background: "none",
+                  border: "none",
+                  cursor: "pointer",
+                  fontSize: 11,
+                  color: "#44546A",
+                  opacity: 0.4,
+                  padding: 0,
                 }}
               >
                 {showPassword ? "Hide" : "Show"}
@@ -185,8 +205,9 @@ export default function Login() {
           {/* Error */}
           {error && (
             <p style={{
-              fontSize: 12, color: "#C0392B",
-              margin: "-12px 0 16px",
+              fontSize: 12,
+              color: "#C0392B",
+              margin: "0 0 16px",
             }}>
               {error}
             </p>
@@ -206,7 +227,6 @@ export default function Login() {
               fontWeight: 500,
               color: "#ffffff",
               cursor: loading ? "not-allowed" : "pointer",
-              fontFamily: "inherit",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -217,7 +237,8 @@ export default function Login() {
             {loading ? (
               <>
                 <span style={{
-                  width: 13, height: 13,
+                  width: 13,
+                  height: 13,
                   border: "2px solid rgba(255,255,255,0.3)",
                   borderTopColor: "#ffffff",
                   borderRadius: "50%",
