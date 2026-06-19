@@ -1,0 +1,36 @@
+:root {
+  /* Text Colors */
+  --text-secondary: #414651;
+  --icon-color:#A4A7AE;
+  
+  /* Border Colors */
+  --border-primary: #D5D7DA;
+  --border-secondary: #E9EAEB;
+  
+  /* Background Colors */
+  --bg-primary: #FFFFFF;
+  
+  /* Brand Colors */
+  --fg-brand-primary: #0095A2;
+  /*font-size*/
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  
+  /* Additional utility variable */
+  --text-primary: #1a1a1a;
+  --bg-secondary: #f8f9fa;
+  --info-red:#F04438;
+  --hover-active-bg: #F3FAFB;
+  --text-Gray:#717680;
+  --font-weight-600:600;
+  --shadow-light: 0 1px 2px 0 var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+  --shadow-medium:  0 2px 4px 0 var(--Colors-Effects-Shadows-shadow-xs, rgba(10, 13, 18, 0.05));
+  --border-radius-4px:4px;
+  --padding-externally:24px;
+}
