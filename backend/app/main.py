@@ -1,0 +1,30 @@
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+from app.api.routes import auth, conversation, agents, tools, evaluation
+
+app = FastAPI(
+    title="Nirukta API",
+    description="Agentic Orchestration Platform — Backend",
+    version="0.1.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# Routers
+app.include_router(auth.router, prefix="/api/auth", tags=["auth"])
+app.include_router(conversation.router, prefix="/api/conversation", tags=["conversation"])
+app.include_router(agents.router, prefix="/api/agents", tags=["agents"])
+app.include_router(tools.router, prefix="/api/tools", tags=["tools"])
+app.include_router(evaluation.router, prefix="/api/evaluation", tags=["evaluation"])
+
+
+@app.get("/health")
+async def health():
+    return {"status": "ok", "service": "nirukta-api"}
