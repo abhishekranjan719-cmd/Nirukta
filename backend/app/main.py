@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from app.api.routes import auth, conversation, agents, tools, evaluation
 
 app = FastAPI(
-    title="Nirukta API",
+    title="nirukt API",
     description="Agentic Orchestration Platform — Backend",
     version="0.1.0",
 )

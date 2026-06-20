@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
+import Logo from "@/components/shared/Logo"
 
 export default function Login() {
   const navigate = useNavigate()
@@ -34,35 +35,8 @@ export default function Login() {
     }}>
 
       {/* Logo — sits above the card, centered */}
-      <div style={{
-        display: "flex",
-        alignItems: "center",
-        gap: 10,
-        marginBottom: 24,
-      }}>
-        <div style={{
-          width: 34,
-          height: 34,
-          background: "#FDF0E2",
-          borderRadius: 8,
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}>
-          <span style={{
-            fontSize: 15,
-            fontWeight: 600,
-            color: "#44546A",
-          }}>N</span>
-        </div>
-        <span style={{
-          fontSize: 18,
-          fontWeight: 500,
-          color: "#44546A",
-          letterSpacing: "0.06em",
-        }}>
-          NIRUKTA
-        </span>
+      <div style={{ marginBottom: 24 }}>
+        <Logo size={36} showWordmark wordmarkSize={18} />
       </div>
 
       {/* Card */}
