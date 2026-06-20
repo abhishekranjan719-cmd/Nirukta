@@ -1,0 +1,294 @@
+ticket_message_id,ticket_id,message_ts,sender,message_text,attachment_url,created_at
+TMSG002001,TICK001001,2025-10-05 09:40:30,customer,Your issue has been resolved.,,2025-10-13 08:57:53
+TMSG002002,TICK001001,2025-10-18 18:32:53,support,We're checking the issue.,,2025-10-10 17:24:50
+TMSG002003,TICK001002,2025-11-15 14:44:25,support,Can you share a photo?,,2025-11-26 08:54:50
+TMSG002004,TICK001002,2025-11-05 15:49:42,customer,Can you share a photo?,,2025-11-13 15:38:01
+TMSG002005,TICK001002,2025-10-23 08:08:39,support,We're checking the issue.,,2025-11-02 13:08:33
+TMSG002006,TICK001002,2025-10-22 19:54:13,support,Your issue has been resolved.,,2025-11-11 05:49:07
+TMSG002007,TICK001003,2025-10-10 03:30:17,support,Please resolve this quickly.,,2025-10-30 00:07:34
+TMSG002008,TICK001003,2025-11-05 03:26:35,customer,We're checking the issue.,,2025-11-07 19:36:05
+TMSG002009,TICK001003,2025-10-06 13:57:28,support,We're checking the issue.,,2025-10-11 15:28:23
+TMSG002010,TICK001004,2025-10-18 14:16:47,support,Your issue has been resolved.,,2025-11-30 16:12:53
+TMSG002011,TICK001004,2025-10-04 22:48:42,support,Please resolve this quickly.,,2025-10-27 19:23:17
+TMSG002012,TICK001004,2025-10-26 14:24:13,support,Please resolve this quickly.,,2025-10-11 11:07:13
+TMSG002013,TICK001005,2025-10-18 21:28:58,support,Please resolve this quickly.,,2025-11-23 18:18:50
+TMSG002014,TICK001005,2025-11-14 14:58:15,customer,Please resolve this quickly.,,2025-11-24 11:12:36
+TMSG002015,TICK001005,2025-11-13 15:51:48,support,We're checking the issue.,,2025-11-13 22:54:00
+TMSG002016,TICK001005,2025-11-16 19:18:36,support,Your issue has been resolved.,,2025-11-14 23:59:19
+TMSG002017,TICK001006,2025-11-05 22:21:45,support,Your issue has been resolved.,,2025-11-09 15:18:32
+TMSG002018,TICK001006,2025-10-31 21:42:59,support,Please resolve this quickly.,,2025-11-11 04:31:49
+TMSG002019,TICK001006,2025-12-01 15:53:29,support,Can you share a photo?,,2025-11-21 02:42:08
+TMSG002020,TICK001007,2025-10-22 22:50:23,customer,Your issue has been resolved.,,2025-11-09 13:53:47
+TMSG002021,TICK001007,2025-10-26 21:59:19,customer,Your issue has been resolved.,,2025-10-23 10:36:19
+TMSG002022,TICK001008,2025-10-18 01:03:42,customer,Can you share a photo?,,2025-10-06 18:57:12
+TMSG002023,TICK001008,2025-11-27 14:51:32,support,Can you share a photo?,,2025-10-30 19:32:49
+TMSG002024,TICK001008,2025-11-23 04:24:01,customer,We're checking the issue.,,2025-10-12 14:21:19
+TMSG002025,TICK001009,2025-11-11 20:59:38,customer,We're checking the issue.,,2025-11-21 16:14:46
+TMSG002026,TICK001009,2025-11-06 20:20:28,support,Your issue has been resolved.,,2025-10-21 22:01:34
+TMSG002027,TICK001010,2025-10-11 16:53:01,support,Please resolve this quickly.,,2025-11-28 22:50:47
+TMSG002028,TICK001010,2025-11-28 14:17:36,customer,Please resolve this quickly.,,2025-11-30 07:52:35
+TMSG002029,TICK001010,2025-10-03 13:49:08,support,Your issue has been resolved.,,2025-11-23 09:33:18
+TMSG002030,TICK001010,2025-11-18 06:03:05,customer,Please resolve this quickly.,,2025-10-06 15:20:14
+TMSG002031,TICK001011,2025-10-09 22:35:24,support,Please resolve this quickly.,,2025-11-01 23:00:57
+TMSG002032,TICK001011,2025-11-09 08:18:49,support,Your issue has been resolved.,,2025-10-14 09:16:39
+TMSG002033,TICK001012,2025-11-22 10:19:35,customer,Please resolve this quickly.,,2025-11-18 00:11:31
+TMSG002034,TICK001012,2025-10-08 22:21:46,customer,Can you share a photo?,,2025-10-19 07:07:06
+TMSG002035,TICK001012,2025-11-18 15:56:14,customer,We're checking the issue.,,2025-10-25 14:10:33
+TMSG002036,TICK001013,2025-10-15 23:25:36,support,Please resolve this quickly.,,2025-10-29 06:58:57
+TMSG002037,TICK001013,2025-11-10 06:30:47,support,Your issue has been resolved.,,2025-11-17 05:25:03
+TMSG002038,TICK001013,2025-11-24 15:54:54,customer,We're checking the issue.,,2025-10-25 20:40:30
+TMSG002039,TICK001014,2025-10-12 01:38:50,support,Can you share a photo?,,2025-11-02 00:12:16
+TMSG002040,TICK001014,2025-11-10 02:16:59,support,Can you share a photo?,,2025-10-30 14:47:25
+TMSG002041,TICK001014,2025-10-18 17:21:04,customer,We're checking the issue.,,2025-11-04 19:49:56
+TMSG002042,TICK001015,2025-10-06 05:02:49,support,We're checking the issue.,,2025-11-21 18:01:23
+TMSG002043,TICK001015,2025-11-22 15:12:07,support,Please resolve this quickly.,,2025-10-20 11:26:16
+TMSG002044,TICK001016,2025-10-26 11:54:51,support,We're checking the issue.,,2025-10-17 03:17:34
+TMSG002045,TICK001016,2025-10-29 02:57:07,customer,Your issue has been resolved.,,2025-10-22 16:08:07
+TMSG002046,TICK001016,2025-11-12 07:23:36,support,Please resolve this quickly.,,2025-11-27 21:02:44
+TMSG002047,TICK001017,2025-11-14 08:12:12,customer,Please resolve this quickly.,,2025-11-02 00:58:24
+TMSG002048,TICK001017,2025-11-15 21:21:40,support,We're checking the issue.,,2025-11-20 01:08:53
+TMSG002049,TICK001017,2025-10-24 02:09:22,customer,Your issue has been resolved.,,2025-10-17 19:58:04
+TMSG002050,TICK001017,2025-10-27 14:24:30,support,Please resolve this quickly.,,2025-11-20 04:31:29
+TMSG002051,TICK001018,2025-10-18 15:41:58,support,Your issue has been resolved.,,2025-10-28 05:45:43
+TMSG002052,TICK001018,2025-11-29 19:55:24,support,Please resolve this quickly.,,2025-10-19 09:38:30
+TMSG002053,TICK001018,2025-12-01 02:22:56,support,Can you share a photo?,,2025-10-19 12:00:01
+TMSG002054,TICK001018,2025-10-11 20:01:55,customer,Please resolve this quickly.,,2025-10-27 09:21:06
+TMSG002055,TICK001019,2025-10-25 19:02:15,support,We're checking the issue.,,2025-10-16 20:01:25
+TMSG002056,TICK001019,2025-11-02 02:24:47,support,Can you share a photo?,,2025-10-03 22:17:33
+TMSG002057,TICK001020,2025-11-10 14:39:42,customer,Please resolve this quickly.,,2025-10-10 09:29:17
+TMSG002058,TICK001020,2025-11-22 14:38:45,support,Can you share a photo?,,2025-11-11 12:43:53
+TMSG002059,TICK001021,2025-12-02 01:25:40,support,Your issue has been resolved.,,2025-10-31 10:21:35
+TMSG002060,TICK001021,2025-11-11 15:45:22,customer,We're checking the issue.,,2025-10-05 08:43:25
+TMSG002061,TICK001021,2025-11-07 03:07:25,support,Your issue has been resolved.,,2025-11-10 21:02:15
+TMSG002062,TICK001021,2025-11-29 13:11:07,support,We're checking the issue.,,2025-10-17 22:19:26
+TMSG002063,TICK001022,2025-11-15 21:21:50,support,Can you share a photo?,,2025-10-27 21:47:13
+TMSG002064,TICK001022,2025-11-08 10:12:03,customer,We're checking the issue.,,2025-10-06 00:47:46
+TMSG002065,TICK001023,2025-11-07 23:42:02,support,Your issue has been resolved.,,2025-11-11 21:30:19
+TMSG002066,TICK001023,2025-12-02 09:06:15,support,Please resolve this quickly.,,2025-11-07 05:19:24
+TMSG002067,TICK001023,2025-11-23 06:32:52,customer,Your issue has been resolved.,,2025-10-19 17:10:32
+TMSG002068,TICK001024,2025-11-09 12:51:37,support,We're checking the issue.,,2025-10-11 12:23:46
+TMSG002069,TICK001024,2025-11-14 02:40:46,support,Please resolve this quickly.,,2025-11-29 00:23:21
+TMSG002070,TICK001024,2025-10-12 14:43:48,customer,Your issue has been resolved.,,2025-10-22 19:14:18
+TMSG002071,TICK001025,2025-10-30 06:15:15,customer,Your issue has been resolved.,,2025-10-25 00:15:07
+TMSG002072,TICK001025,2025-11-23 03:02:08,customer,We're checking the issue.,,2025-10-10 06:26:48
+TMSG002073,TICK001025,2025-10-18 13:44:46,support,Please resolve this quickly.,,2025-11-05 07:45:20
+TMSG002074,TICK001026,2025-11-26 19:41:15,support,We're checking the issue.,,2025-10-07 23:31:24
+TMSG002075,TICK001026,2025-10-21 09:55:45,customer,Please resolve this quickly.,,2025-11-03 11:39:40
+TMSG002076,TICK001026,2025-11-10 11:09:49,customer,Your issue has been resolved.,,2025-10-19 20:13:52
+TMSG002077,TICK001027,2025-10-11 12:10:18,support,Your issue has been resolved.,,2025-11-30 14:58:39
+TMSG002078,TICK001027,2025-11-15 08:52:32,support,Can you share a photo?,,2025-10-29 15:25:45
+TMSG002079,TICK001027,2025-11-18 13:29:39,support,We're checking the issue.,,2025-11-14 17:27:08
+TMSG002080,TICK001027,2025-10-08 00:38:58,support,We're checking the issue.,,2025-11-01 12:19:23
+TMSG002081,TICK001028,2025-11-01 06:06:25,support,We're checking the issue.,,2025-10-09 01:44:29
+TMSG002082,TICK001028,2025-11-01 06:42:35,support,Can you share a photo?,,2025-10-17 16:45:40
+TMSG002083,TICK001029,2025-10-29 06:32:28,customer,We're checking the issue.,,2025-10-13 22:51:32
+TMSG002084,TICK001029,2025-10-31 10:26:35,customer,Can you share a photo?,,2025-10-17 15:11:38
+TMSG002085,TICK001030,2025-11-12 20:24:22,support,We're checking the issue.,,2025-11-03 00:08:40
+TMSG002086,TICK001030,2025-11-08 20:11:57,customer,Please resolve this quickly.,,2025-10-18 11:01:07
+TMSG002087,TICK001031,2025-11-13 10:10:25,customer,Can you share a photo?,,2025-10-10 05:47:40
+TMSG002088,TICK001031,2025-11-10 18:38:05,customer,Can you share a photo?,,2025-10-08 17:36:34
+TMSG002089,TICK001031,2025-10-28 07:19:15,support,Can you share a photo?,,2025-11-11 15:00:48
+TMSG002090,TICK001032,2025-11-01 05:43:18,support,Your issue has been resolved.,,2025-10-27 07:46:13
+TMSG002091,TICK001032,2025-10-05 23:58:41,customer,Please resolve this quickly.,,2025-10-06 00:58:56
+TMSG002092,TICK001032,2025-11-15 00:06:37,customer,Please resolve this quickly.,,2025-10-18 23:12:16
+TMSG002093,TICK001033,2025-11-02 01:57:00,customer,Can you share a photo?,,2025-11-17 08:51:26
+TMSG002094,TICK001033,2025-11-10 14:35:46,customer,Your issue has been resolved.,,2025-11-09 23:35:49
+TMSG002095,TICK001034,2025-10-04 09:43:13,customer,We're checking the issue.,,2025-11-07 01:37:31
+TMSG002096,TICK001034,2025-10-24 13:39:09,support,Your issue has been resolved.,,2025-10-10 09:08:40
+TMSG002097,TICK001035,2025-10-24 13:22:15,support,Your issue has been resolved.,,2025-12-02 06:58:58
+TMSG002098,TICK001035,2025-11-19 01:55:46,customer,Your issue has been resolved.,,2025-11-23 18:23:20
+TMSG002099,TICK001035,2025-10-23 18:42:23,support,Your issue has been resolved.,,2025-11-17 06:55:22
+TMSG002100,TICK001036,2025-10-30 23:26:12,customer,Your issue has been resolved.,,2025-11-18 19:07:18
+TMSG002101,TICK001036,2025-11-08 22:37:28,customer,Please resolve this quickly.,,2025-11-09 06:59:12
+TMSG002102,TICK001036,2025-11-30 23:36:51,customer,Can you share a photo?,,2025-10-25 04:28:16
+TMSG002103,TICK001037,2025-11-20 06:35:53,support,Your issue has been resolved.,,2025-11-18 06:41:19
+TMSG002104,TICK001037,2025-11-19 03:54:37,customer,Your issue has been resolved.,,2025-10-21 10:00:13
+TMSG002105,TICK001037,2025-11-02 00:54:25,customer,We're checking the issue.,,2025-10-20 12:34:48
+TMSG002106,TICK001038,2025-10-28 08:35:34,customer,Can you share a photo?,,2025-10-19 19:24:40
+TMSG002107,TICK001038,2025-11-19 06:38:16,customer,Your issue has been resolved.,,2025-11-21 22:10:53
+TMSG002108,TICK001039,2025-11-02 16:40:22,customer,Your issue has been resolved.,,2025-10-10 09:57:54
+TMSG002109,TICK001039,2025-10-20 12:23:46,customer,Can you share a photo?,,2025-11-24 17:25:36
+TMSG002110,TICK001039,2025-11-20 03:20:31,customer,Can you share a photo?,,2025-11-12 10:27:18
+TMSG002111,TICK001040,2025-10-13 16:51:30,support,Your issue has been resolved.,,2025-10-16 09:16:40
+TMSG002112,TICK001040,2025-11-21 09:51:58,support,Please resolve this quickly.,,2025-10-17 10:53:48
+TMSG002113,TICK001041,2025-11-13 20:05:52,customer,Your issue has been resolved.,,2025-10-13 15:59:43
+TMSG002114,TICK001041,2025-10-18 21:28:51,support,We're checking the issue.,,2025-10-30 13:23:26
+TMSG002115,TICK001041,2025-11-29 00:54:38,support,Please resolve this quickly.,,2025-12-01 21:13:41
+TMSG002116,TICK001041,2025-11-26 04:08:12,support,We're checking the issue.,,2025-11-17 05:26:11
+TMSG002117,TICK001042,2025-11-15 22:30:25,customer,Your issue has been resolved.,,2025-12-01 13:35:42
+TMSG002118,TICK001042,2025-11-27 11:40:17,support,Can you share a photo?,,2025-11-30 16:43:13
+TMSG002119,TICK001042,2025-10-31 05:39:34,support,We're checking the issue.,,2025-11-21 10:39:56
+TMSG002120,TICK001043,2025-10-10 12:36:39,customer,We're checking the issue.,,2025-11-28 23:59:38
+TMSG002121,TICK001043,2025-11-02 16:03:32,customer,Please resolve this quickly.,,2025-10-07 00:33:03
+TMSG002122,TICK001043,2025-11-11 22:24:30,support,Please resolve this quickly.,,2025-11-25 22:49:29
+TMSG002123,TICK001043,2025-10-15 05:40:09,support,We're checking the issue.,,2025-10-20 15:31:45
+TMSG002124,TICK001044,2025-11-16 21:21:57,customer,Your issue has been resolved.,,2025-11-06 02:26:32
+TMSG002125,TICK001044,2025-11-11 09:54:39,support,We're checking the issue.,,2025-10-12 04:13:31
+TMSG002126,TICK001044,2025-10-04 10:48:36,customer,Your issue has been resolved.,,2025-10-31 23:40:09
+TMSG002127,TICK001044,2025-10-06 23:41:43,support,We're checking the issue.,,2025-11-26 16:32:03
+TMSG002128,TICK001045,2025-11-13 17:08:06,customer,We're checking the issue.,,2025-11-18 06:12:53
+TMSG002129,TICK001045,2025-10-21 15:06:36,customer,Your issue has been resolved.,,2025-10-17 07:35:17
+TMSG002130,TICK001045,2025-11-03 20:00:07,customer,We're checking the issue.,,2025-11-23 00:24:37
+TMSG002131,TICK001045,2025-11-10 13:05:44,support,Your issue has been resolved.,,2025-11-21 06:42:30
+TMSG002132,TICK001046,2025-10-29 06:01:14,support,We're checking the issue.,,2025-11-22 23:04:22
+TMSG002133,TICK001046,2025-10-10 09:02:00,support,We're checking the issue.,,2025-10-06 08:16:35
+TMSG002134,TICK001047,2025-11-09 03:42:16,customer,Please resolve this quickly.,,2025-10-18 22:04:16
+TMSG002135,TICK001047,2025-10-30 04:48:22,customer,Can you share a photo?,,2025-11-17 02:07:19
+TMSG002136,TICK001047,2025-10-10 14:52:37,support,Please resolve this quickly.,,2025-11-10 00:05:55
+TMSG002137,TICK001048,2025-11-06 03:26:22,customer,We're checking the issue.,,2025-11-10 10:28:58
+TMSG002138,TICK001048,2025-12-02 04:31:00,support,We're checking the issue.,,2025-10-22 06:29:49
+TMSG002139,TICK001048,2025-11-24 09:37:48,support,We're checking the issue.,,2025-11-13 03:05:01
+TMSG002140,TICK001049,2025-11-03 04:24:40,customer,We're checking the issue.,,2025-10-10 03:59:58
+TMSG002141,TICK001049,2025-10-21 02:49:51,support,Please resolve this quickly.,,2025-10-05 21:35:29
+TMSG002142,TICK001050,2025-11-05 01:30:35,customer,Please resolve this quickly.,,2025-10-28 22:21:25
+TMSG002143,TICK001050,2025-10-14 04:11:48,support,Can you share a photo?,,2025-11-06 20:43:16
+TMSG002144,TICK001051,2025-10-15 21:59:25,support,We're checking the issue.,,2025-11-21 04:24:29
+TMSG002145,TICK001051,2025-10-05 23:16:17,customer,Can you share a photo?,,2025-11-19 08:32:35
+TMSG002146,TICK001051,2025-11-21 01:43:13,customer,Your issue has been resolved.,,2025-11-13 07:06:13
+TMSG002147,TICK001051,2025-11-01 11:31:19,customer,Can you share a photo?,,2025-11-17 12:26:01
+TMSG002148,TICK001052,2025-11-19 08:27:15,support,We're checking the issue.,,2025-10-04 03:58:23
+TMSG002149,TICK001052,2025-10-14 10:34:48,customer,We're checking the issue.,,2025-11-13 05:20:41
+TMSG002150,TICK001052,2025-11-28 20:20:28,customer,Your issue has been resolved.,,2025-11-08 20:28:56
+TMSG002151,TICK001053,2025-10-16 20:39:15,support,Please resolve this quickly.,,2025-10-05 00:26:17
+TMSG002152,TICK001053,2025-10-18 01:39:36,customer,Can you share a photo?,,2025-10-26 15:44:39
+TMSG002153,TICK001053,2025-10-22 03:52:12,customer,Can you share a photo?,,2025-11-09 08:02:51
+TMSG002154,TICK001054,2025-10-15 14:21:09,support,Can you share a photo?,,2025-11-20 03:22:00
+TMSG002155,TICK001054,2025-10-06 08:31:58,support,Please resolve this quickly.,,2025-11-11 06:01:58
+TMSG002156,TICK001054,2025-11-08 10:48:19,support,Can you share a photo?,,2025-10-27 02:43:57
+TMSG002157,TICK001055,2025-11-26 18:20:55,customer,Your issue has been resolved.,,2025-10-10 10:02:39
+TMSG002158,TICK001055,2025-10-23 15:33:36,customer,Can you share a photo?,,2025-11-18 06:16:03
+TMSG002159,TICK001055,2025-11-24 20:19:22,customer,Please resolve this quickly.,,2025-11-29 23:27:39
+TMSG002160,TICK001056,2025-11-04 13:18:45,support,Can you share a photo?,,2025-11-09 23:57:33
+TMSG002161,TICK001056,2025-10-16 18:32:00,customer,Please resolve this quickly.,,2025-10-22 23:49:09
+TMSG002162,TICK001056,2025-11-04 05:38:59,support,We're checking the issue.,,2025-11-01 00:25:47
+TMSG002163,TICK001057,2025-10-25 08:11:44,customer,We're checking the issue.,,2025-11-07 21:24:01
+TMSG002164,TICK001057,2025-10-10 00:02:48,customer,We're checking the issue.,,2025-10-19 04:58:56
+TMSG002165,TICK001058,2025-11-29 12:56:43,support,Your issue has been resolved.,,2025-10-05 06:29:41
+TMSG002166,TICK001058,2025-11-02 15:33:28,support,Your issue has been resolved.,,2025-11-07 07:21:02
+TMSG002167,TICK001059,2025-11-25 07:43:37,customer,We're checking the issue.,,2025-11-27 08:30:17
+TMSG002168,TICK001059,2025-11-12 18:18:32,customer,Can you share a photo?,,2025-10-24 16:20:42
+TMSG002169,TICK001059,2025-11-25 22:34:16,support,Please resolve this quickly.,,2025-11-06 18:49:49
+TMSG002170,TICK001059,2025-11-30 23:05:32,support,Please resolve this quickly.,,2025-11-07 17:49:16
+TMSG002171,TICK001060,2025-10-16 19:20:44,customer,Please resolve this quickly.,,2025-10-31 13:56:12
+TMSG002172,TICK001060,2025-10-08 01:48:45,support,Can you share a photo?,,2025-11-05 09:05:47
+TMSG002173,TICK001061,2025-10-07 05:01:00,customer,We're checking the issue.,,2025-10-08 23:07:37
+TMSG002174,TICK001061,2025-10-30 08:39:12,support,Your issue has been resolved.,,2025-11-03 02:16:38
+TMSG002175,TICK001061,2025-10-11 22:09:24,customer,We're checking the issue.,,2025-10-05 12:59:32
+TMSG002176,TICK001062,2025-11-11 04:00:27,support,Please resolve this quickly.,,2025-11-09 10:15:56
+TMSG002177,TICK001062,2025-11-11 23:16:45,support,Please resolve this quickly.,,2025-10-04 15:27:30
+TMSG002178,TICK001063,2025-11-08 15:59:13,support,Please resolve this quickly.,,2025-11-26 09:50:20
+TMSG002179,TICK001063,2025-11-22 06:28:20,support,Can you share a photo?,,2025-10-07 17:04:00
+TMSG002180,TICK001063,2025-11-28 14:17:20,customer,Can you share a photo?,,2025-11-03 01:35:04
+TMSG002181,TICK001064,2025-11-27 15:13:49,support,Can you share a photo?,,2025-10-18 14:18:43
+TMSG002182,TICK001064,2025-10-28 18:09:45,customer,We're checking the issue.,,2025-10-23 21:54:11
+TMSG002183,TICK001065,2025-11-28 15:30:21,customer,Your issue has been resolved.,,2025-11-21 08:04:51
+TMSG002184,TICK001065,2025-10-11 16:29:16,support,Please resolve this quickly.,,2025-11-05 02:54:00
+TMSG002185,TICK001065,2025-11-23 12:49:14,customer,Your issue has been resolved.,,2025-11-22 01:30:33
+TMSG002186,TICK001066,2025-10-27 07:31:12,support,Can you share a photo?,,2025-10-19 05:53:52
+TMSG002187,TICK001066,2025-10-18 11:42:26,support,Please resolve this quickly.,,2025-11-08 18:54:43
+TMSG002188,TICK001066,2025-11-19 21:37:18,support,Please resolve this quickly.,,2025-10-08 20:35:08
+TMSG002189,TICK001066,2025-10-19 18:40:44,support,Your issue has been resolved.,,2025-10-14 03:55:59
+TMSG002190,TICK001067,2025-10-13 19:57:16,customer,We're checking the issue.,,2025-11-12 09:15:14
+TMSG002191,TICK001067,2025-11-25 02:56:47,support,Your issue has been resolved.,,2025-11-10 07:47:25
+TMSG002192,TICK001068,2025-11-11 11:30:42,support,Can you share a photo?,,2025-10-07 14:52:53
+TMSG002193,TICK001068,2025-10-19 00:22:54,support,Can you share a photo?,,2025-11-24 17:46:47
+TMSG002194,TICK001068,2025-12-01 13:34:53,support,We're checking the issue.,,2025-10-21 01:52:07
+TMSG002195,TICK001069,2025-11-23 08:27:25,support,Your issue has been resolved.,,2025-10-12 12:16:22
+TMSG002196,TICK001069,2025-10-28 09:28:36,support,Can you share a photo?,,2025-12-02 01:55:28
+TMSG002197,TICK001070,2025-11-21 12:43:03,customer,We're checking the issue.,,2025-12-01 05:54:29
+TMSG002198,TICK001070,2025-11-10 15:39:24,customer,Please resolve this quickly.,,2025-11-06 09:08:50
+TMSG002199,TICK001070,2025-11-14 14:21:56,customer,Can you share a photo?,,2025-11-29 15:29:13
+TMSG002200,TICK001070,2025-10-12 14:05:57,customer,Can you share a photo?,,2025-11-19 05:34:37
+TMSG002201,TICK001071,2025-11-25 23:59:40,customer,Your issue has been resolved.,,2025-10-14 03:07:53
+TMSG002202,TICK001071,2025-11-07 22:22:28,customer,Your issue has been resolved.,,2025-10-28 11:27:28
+TMSG002203,TICK001072,2025-11-26 01:01:27,support,Can you share a photo?,,2025-10-21 16:04:08
+TMSG002204,TICK001072,2025-11-09 16:31:05,support,Please resolve this quickly.,,2025-10-11 19:59:00
+TMSG002205,TICK001072,2025-10-10 02:33:18,support,Can you share a photo?,,2025-11-03 02:04:42
+TMSG002206,TICK001072,2025-10-26 20:10:41,customer,Please resolve this quickly.,,2025-11-26 13:29:19
+TMSG002207,TICK001073,2025-10-24 19:31:11,customer,Can you share a photo?,,2025-10-25 00:30:21
+TMSG002208,TICK001073,2025-11-09 02:21:54,customer,Please resolve this quickly.,,2025-11-10 03:27:28
+TMSG002209,TICK001073,2025-11-02 02:01:08,customer,Please resolve this quickly.,,2025-10-31 01:47:12
+TMSG002210,TICK001074,2025-11-29 17:25:18,support,Please resolve this quickly.,,2025-10-22 12:17:50
+TMSG002211,TICK001074,2025-10-30 20:44:19,customer,Please resolve this quickly.,,2025-11-17 16:31:36
+TMSG002212,TICK001074,2025-10-30 18:57:42,support,Your issue has been resolved.,,2025-10-25 14:50:09
+TMSG002213,TICK001075,2025-10-08 12:06:52,customer,We're checking the issue.,,2025-10-26 00:19:22
+TMSG002214,TICK001075,2025-11-01 00:01:21,support,We're checking the issue.,,2025-10-17 04:06:16
+TMSG002215,TICK001075,2025-11-14 04:23:05,support,Please resolve this quickly.,,2025-11-17 15:00:04
+TMSG002216,TICK001075,2025-11-25 13:05:29,support,Your issue has been resolved.,,2025-10-29 10:57:23
+TMSG002217,TICK001076,2025-11-05 12:53:15,customer,Can you share a photo?,,2025-11-10 20:01:17
+TMSG002218,TICK001076,2025-11-14 13:46:06,support,We're checking the issue.,,2025-10-09 16:15:39
+TMSG002219,TICK001076,2025-10-13 23:44:05,customer,Your issue has been resolved.,,2025-11-04 08:44:21
+TMSG002220,TICK001076,2025-11-06 09:45:40,support,Can you share a photo?,,2025-11-11 03:31:25
+TMSG002221,TICK001077,2025-11-27 00:04:55,customer,Can you share a photo?,,2025-10-10 21:36:14
+TMSG002222,TICK001077,2025-11-12 03:05:00,support,Can you share a photo?,,2025-10-03 17:42:50
+TMSG002223,TICK001077,2025-11-30 07:16:43,customer,Please resolve this quickly.,,2025-11-09 14:06:08
+TMSG002224,TICK001078,2025-11-02 06:07:59,customer,Can you share a photo?,,2025-10-08 23:58:25
+TMSG002225,TICK001078,2025-11-08 08:12:39,customer,Your issue has been resolved.,,2025-11-15 00:13:57
+TMSG002226,TICK001079,2025-11-22 01:32:03,customer,Your issue has been resolved.,,2025-11-20 07:35:17
+TMSG002227,TICK001079,2025-11-13 22:46:07,support,Can you share a photo?,,2025-11-12 22:47:02
+TMSG002228,TICK001079,2025-10-06 01:54:08,support,Your issue has been resolved.,,2025-10-10 19:19:24
+TMSG002229,TICK001080,2025-11-18 03:26:03,support,Your issue has been resolved.,,2025-11-25 07:34:28
+TMSG002230,TICK001080,2025-10-18 17:05:14,support,Please resolve this quickly.,,2025-11-09 09:22:31
+TMSG002231,TICK001080,2025-10-12 17:26:14,customer,We're checking the issue.,,2025-10-31 00:17:36
+TMSG002232,TICK001080,2025-11-18 03:34:51,customer,Can you share a photo?,,2025-10-25 12:04:04
+TMSG002233,TICK001081,2025-10-05 01:37:51,customer,We're checking the issue.,,2025-11-16 08:14:47
+TMSG002234,TICK001081,2025-10-31 19:09:48,customer,Please resolve this quickly.,,2025-11-24 23:02:35
+TMSG002235,TICK001082,2025-10-06 04:16:42,customer,We're checking the issue.,,2025-10-17 22:06:33
+TMSG002236,TICK001082,2025-11-16 17:22:33,customer,Please resolve this quickly.,,2025-11-30 12:39:38
+TMSG002237,TICK001082,2025-11-20 18:22:26,customer,We're checking the issue.,,2025-10-16 09:47:42
+TMSG002238,TICK001083,2025-11-20 14:11:12,customer,Please resolve this quickly.,,2025-10-23 01:19:45
+TMSG002239,TICK001083,2025-10-04 15:05:59,support,We're checking the issue.,,2025-10-14 06:28:56
+TMSG002240,TICK001083,2025-11-29 10:40:51,support,Can you share a photo?,,2025-12-02 01:07:21
+TMSG002241,TICK001083,2025-11-13 21:41:25,support,Please resolve this quickly.,,2025-11-29 04:18:48
+TMSG002242,TICK001084,2025-11-02 00:05:51,customer,Your issue has been resolved.,,2025-11-10 18:56:46
+TMSG002243,TICK001084,2025-11-08 14:57:23,support,Please resolve this quickly.,,2025-10-18 05:15:22
+TMSG002244,TICK001084,2025-10-13 16:11:47,customer,We're checking the issue.,,2025-11-18 13:14:50
+TMSG002245,TICK001085,2025-10-31 18:40:35,support,Your issue has been resolved.,,2025-11-08 12:27:26
+TMSG002246,TICK001085,2025-11-10 10:18:49,customer,We're checking the issue.,,2025-11-02 22:17:54
+TMSG002247,TICK001086,2025-11-26 09:13:11,support,We're checking the issue.,,2025-11-28 22:07:43
+TMSG002248,TICK001086,2025-11-25 10:23:49,customer,We're checking the issue.,,2025-11-24 09:56:31
+TMSG002249,TICK001086,2025-10-29 06:40:21,support,We're checking the issue.,,2025-10-22 09:03:28
+TMSG002250,TICK001086,2025-11-26 02:26:42,customer,Your issue has been resolved.,,2025-11-13 13:14:01
+TMSG002251,TICK001087,2025-11-26 23:32:55,customer,Your issue has been resolved.,,2025-11-01 03:15:27
+TMSG002252,TICK001087,2025-11-01 20:42:18,support,Can you share a photo?,,2025-10-25 09:18:53
+TMSG002253,TICK001087,2025-11-26 12:51:21,support,Please resolve this quickly.,,2025-10-05 14:27:10
+TMSG002254,TICK001088,2025-11-10 10:46:50,customer,We're checking the issue.,,2025-11-23 03:26:48
+TMSG002255,TICK001088,2025-10-29 23:30:22,support,Your issue has been resolved.,,2025-10-13 17:43:11
+TMSG002256,TICK001088,2025-11-01 21:28:51,customer,We're checking the issue.,,2025-11-08 17:03:57
+TMSG002257,TICK001088,2025-11-17 16:21:36,support,Your issue has been resolved.,,2025-11-28 06:57:57
+TMSG002258,TICK001089,2025-11-06 18:03:12,customer,Your issue has been resolved.,,2025-11-06 03:05:07
+TMSG002259,TICK001089,2025-11-16 12:56:22,customer,Your issue has been resolved.,,2025-10-22 12:57:40
+TMSG002260,TICK001090,2025-11-26 02:18:05,customer,We're checking the issue.,,2025-10-09 18:49:45
+TMSG002261,TICK001090,2025-11-05 15:34:42,support,Can you share a photo?,,2025-11-13 14:13:00
+TMSG002262,TICK001090,2025-11-16 07:06:53,support,We're checking the issue.,,2025-11-28 13:00:42
+TMSG002263,TICK001090,2025-11-30 05:48:31,customer,Can you share a photo?,,2025-11-17 22:20:13
+TMSG002264,TICK001091,2025-10-16 03:14:44,support,Please resolve this quickly.,,2025-11-23 19:31:56
+TMSG002265,TICK001091,2025-10-11 05:17:02,support,We're checking the issue.,,2025-11-05 18:56:53
+TMSG002266,TICK001091,2025-11-13 14:48:15,support,Please resolve this quickly.,,2025-10-11 13:19:10
+TMSG002267,TICK001092,2025-10-21 16:13:50,support,Please resolve this quickly.,,2025-10-05 11:37:21
+TMSG002268,TICK001092,2025-10-15 13:27:01,customer,Can you share a photo?,,2025-10-25 10:05:06
+TMSG002269,TICK001092,2025-10-19 01:23:20,customer,Please resolve this quickly.,,2025-11-19 02:50:57
+TMSG002270,TICK001093,2025-11-11 12:16:42,customer,Can you share a photo?,,2025-10-24 08:19:25
+TMSG002271,TICK001093,2025-11-30 03:57:49,support,Please resolve this quickly.,,2025-10-12 04:17:11
+TMSG002272,TICK001093,2025-11-10 16:40:19,support,Your issue has been resolved.,,2025-10-30 23:49:08
+TMSG002273,TICK001094,2025-11-30 21:04:47,customer,Your issue has been resolved.,,2025-11-20 21:29:00
+TMSG002274,TICK001094,2025-10-23 10:15:09,customer,Can you share a photo?,,2025-11-28 12:22:15
+TMSG002275,TICK001094,2025-11-16 04:25:59,support,Please resolve this quickly.,,2025-11-10 14:17:11
+TMSG002276,TICK001094,2025-11-23 05:34:30,support,We're checking the issue.,,2025-11-17 10:41:59
+TMSG002277,TICK001095,2025-11-09 15:15:06,support,Your issue has been resolved.,,2025-11-07 23:51:42
+TMSG002278,TICK001095,2025-11-29 01:09:25,customer,Please resolve this quickly.,,2025-11-12 01:50:50
+TMSG002279,TICK001095,2025-11-01 02:26:53,customer,Can you share a photo?,,2025-11-20 21:51:43
+TMSG002280,TICK001096,2025-10-14 00:45:03,customer,We're checking the issue.,,2025-11-24 04:23:36
+TMSG002281,TICK001096,2025-10-11 04:45:12,customer,Can you share a photo?,,2025-11-19 05:51:46
+TMSG002282,TICK001096,2025-11-07 00:22:32,customer,Please resolve this quickly.,,2025-10-25 10:48:51
+TMSG002283,TICK001096,2025-10-29 06:12:48,customer,Please resolve this quickly.,,2025-10-07 04:41:28
+TMSG002284,TICK001097,2025-11-28 19:36:31,customer,Your issue has been resolved.,,2025-11-14 09:09:22
+TMSG002285,TICK001097,2025-10-13 20:54:13,support,Your issue has been resolved.,,2025-11-28 04:02:29
+TMSG002286,TICK001098,2025-12-02 09:05:47,support,Please resolve this quickly.,,2025-11-15 05:56:37
+TMSG002287,TICK001098,2025-11-05 19:58:45,support,Your issue has been resolved.,,2025-10-14 10:18:19
+TMSG002288,TICK001098,2025-10-11 20:43:25,customer,Can you share a photo?,,2025-11-19 13:03:55
+TMSG002289,TICK001099,2025-11-03 02:23:34,support,Your issue has been resolved.,,2025-11-13 02:38:49
+TMSG002290,TICK001099,2025-10-24 14:14:14,support,Please resolve this quickly.,,2025-10-30 21:41:16
+TMSG002291,TICK001100,2025-10-30 12:48:33,support,We're checking the issue.,,2025-10-09 02:07:04
+TMSG002292,TICK001100,2025-11-12 10:59:26,support,Please resolve this quickly.,,2025-10-08 06:05:42
+TMSG002293,TICK001100,2025-10-18 04:56:27,customer,Your issue has been resolved.,,2025-10-14 20:38:31

@@ -1,0 +1,101 @@
+review_id,customer_id,sku,rating,title,review_text,review_ts,verified_purchase_flag,helpful_count,responded_by,response_text,created_at
+REV13001,CUST1001,BTR006,5,Good produce,Packaging can be improved.,2025-10-30 12:23:45,True,7,,,2025-12-01 10:11:57
+REV13002,CUST1002,TOM001,5,Fresh quality,Pieces were slightly overripe.,2025-11-09 20:42:39,True,19,,,2025-10-29 17:49:47
+REV13003,CUST1003,LIM008,3,Satisfactory,Pieces were slightly overripe.,2025-11-26 18:39:38,True,12,,,2025-11-12 04:56:12
+REV13004,CUST1004,APP009,4,Good produce,"Good quality, would buy again.",2025-11-13 19:51:31,True,11,,,2025-11-07 13:27:32
+REV13005,CUST1005,BTR006,3,Too ripe,"Very fresh produce, delivered quickly.",2025-11-22 00:14:52,True,19,,,2025-11-05 23:13:32
+REV13006,CUST1006,LIM008,3,Good produce,"Very fresh produce, delivered quickly.",2025-10-30 02:07:51,True,1,,,2025-11-01 11:41:47
+REV13007,CUST1007,APP009,3,Satisfactory,"Good quality, would buy again.",2025-11-29 10:47:32,True,8,,,2025-10-31 19:27:21
+REV13008,CUST1008,BTR006,5,Satisfactory,"Good quality, would buy again.",2025-10-27 18:51:15,True,5,,,2025-11-13 00:13:06
+REV13009,CUST1009,POT002,4,Good produce,"Very fresh produce, delivered quickly.",2025-11-11 02:47:36,True,19,,,2025-10-26 05:23:26
+REV13010,CUST1010,LIM008,3,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-22 04:07:25,True,2,,,2025-11-09 15:44:31
+REV13011,CUST1011,TOM001,4,Fresh quality,"Good quality, would buy again.",2025-10-31 21:19:24,True,9,,,2025-11-01 16:12:28
+REV13012,CUST1012,LIM008,3,Satisfactory,"Good quality, would buy again.",2025-11-17 03:03:26,True,20,,,2025-11-30 20:34:30
+REV13013,CUST1013,LIM008,5,Fresh quality,Packaging can be improved.,2025-10-28 08:59:48,True,16,,,2025-11-05 17:44:21
+REV13014,CUST1014,BTR006,3,Too ripe,Packaging can be improved.,2025-11-21 23:25:34,True,9,,,2025-11-18 23:41:16
+REV13015,CUST1015,LIM008,4,Good produce,"Good quality, would buy again.",2025-11-14 06:10:22,True,19,,,2025-10-27 02:00:32
+REV13016,CUST1016,LIM008,5,Good produce,Packaging can be improved.,2025-11-25 20:35:44,True,16,,,2025-11-06 09:02:38
+REV13017,CUST1017,GUR010,5,Fresh quality,"Very fresh produce, delivered quickly.",2025-11-01 05:24:22,True,2,,,2025-11-28 15:46:58
+REV13018,CUST1018,ONI003,4,Too ripe,"Very fresh produce, delivered quickly.",2025-10-24 11:08:37,True,5,,,2025-11-27 21:40:06
+REV13019,CUST1019,GUR010,3,Satisfactory,"Good quality, would buy again.",2025-11-26 09:51:55,True,20,,,2025-11-03 04:54:51
+REV13020,CUST1020,TOM001,4,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-24 16:02:52,True,0,,,2025-11-07 20:25:45
+REV13021,CUST1021,LIM008,5,Good produce,"Very fresh produce, delivered quickly.",2025-11-14 13:42:15,True,14,,,2025-11-16 14:52:09
+REV13022,CUST1022,CAR004,4,Too ripe,"Very fresh produce, delivered quickly.",2025-11-14 05:23:14,True,10,,,2025-11-22 15:26:03
+REV13023,CUST1023,POT002,3,Good produce,"Very fresh produce, delivered quickly.",2025-11-03 02:35:35,True,15,,,2025-10-29 05:50:45
+REV13024,CUST1024,ONI003,4,Satisfactory,Pieces were slightly overripe.,2025-10-31 23:48:06,True,1,,,2025-11-04 17:05:02
+REV13025,CUST1025,BTR006,5,Good produce,Pieces were slightly overripe.,2025-10-25 20:53:30,True,14,,,2025-11-06 11:32:50
+REV13026,CUST1026,BTR006,3,Too ripe,Packaging can be improved.,2025-11-21 00:42:55,True,18,,,2025-11-04 07:41:17
+REV13027,CUST1027,CAR004,4,Fresh quality,Pieces were slightly overripe.,2025-11-17 12:32:09,True,16,,,2025-11-11 00:18:59
+REV13028,CUST1028,APP009,5,Satisfactory,Packaging can be improved.,2025-11-26 22:24:05,True,19,,,2025-11-02 18:07:31
+REV13029,CUST1029,CAR004,3,Too ripe,Packaging can be improved.,2025-11-10 14:43:14,True,18,,,2025-10-30 12:32:16
+REV13030,CUST1030,ONI003,3,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-29 00:44:29,True,10,,,2025-11-03 12:38:41
+REV13031,CUST1031,GUR010,4,Good produce,"Very fresh produce, delivered quickly.",2025-10-26 17:00:21,True,5,,,2025-11-16 05:07:39
+REV13032,CUST1032,BTR006,4,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-08 19:31:07,True,0,,,2025-11-23 10:38:29
+REV13033,CUST1033,POT002,4,Too ripe,"Very fresh produce, delivered quickly.",2025-11-09 10:59:18,True,15,,,2025-11-02 07:34:09
+REV13034,CUST1034,TOM001,3,Fresh quality,Pieces were slightly overripe.,2025-11-02 23:53:27,True,1,,,2025-11-27 21:51:03
+REV13035,CUST1035,ONI003,4,Fresh quality,"Good quality, would buy again.",2025-11-15 01:50:31,True,4,,,2025-11-02 02:55:49
+REV13036,CUST1036,CAR004,5,Satisfactory,"Good quality, would buy again.",2025-11-23 01:47:39,True,9,,,2025-11-06 20:27:56
+REV13037,CUST1037,CAR004,4,Fresh quality,Pieces were slightly overripe.,2025-11-15 20:40:22,True,15,,,2025-11-15 02:58:31
+REV13038,CUST1038,TOM001,5,Fresh quality,"Good quality, would buy again.",2025-11-23 23:18:29,True,19,,,2025-11-13 08:49:22
+REV13039,CUST1039,TOM001,3,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-02 23:25:39,True,14,,,2025-10-26 10:29:28
+REV13040,CUST1040,ONI003,3,Too ripe,"Good quality, would buy again.",2025-11-29 23:33:08,True,0,,,2025-11-27 05:14:39
+REV13041,CUST1041,CAR004,5,Fresh quality,"Very fresh produce, delivered quickly.",2025-11-13 11:56:24,True,12,,,2025-11-07 22:56:57
+REV13042,CUST1042,LIM008,3,Too ripe,Pieces were slightly overripe.,2025-11-18 10:38:30,True,20,,,2025-11-09 16:36:32
+REV13043,CUST1043,POT002,4,Fresh quality,"Very fresh produce, delivered quickly.",2025-11-17 03:08:52,True,18,,,2025-10-30 08:13:50
+REV13044,CUST1044,LIM008,4,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-14 10:47:18,True,8,,,2025-12-01 10:21:27
+REV13045,CUST1045,BTR006,3,Fresh quality,"Good quality, would buy again.",2025-11-13 08:04:11,True,7,,,2025-11-09 16:47:13
+REV13046,CUST1046,BRN007,3,Fresh quality,"Good quality, would buy again.",2025-11-06 23:20:51,True,9,,,2025-12-01 18:14:26
+REV13047,CUST1047,COW005,4,Satisfactory,Packaging can be improved.,2025-11-22 23:08:56,True,10,,,2025-11-30 23:59:25
+REV13048,CUST1048,APP009,4,Too ripe,"Very fresh produce, delivered quickly.",2025-11-11 06:17:26,True,7,,,2025-11-22 14:30:06
+REV13049,CUST1049,BRN007,3,Good produce,Packaging can be improved.,2025-11-20 21:26:29,True,10,,,2025-10-26 16:49:31
+REV13050,CUST1050,APP009,4,Fresh quality,"Good quality, would buy again.",2025-11-09 04:05:55,True,0,,,2025-11-25 05:13:46
+REV13051,CUST1051,BRN007,3,Too ripe,Pieces were slightly overripe.,2025-11-23 07:41:43,True,15,,,2025-11-19 07:30:51
+REV13052,CUST1052,BRN007,4,Good produce,Pieces were slightly overripe.,2025-11-20 01:52:26,True,9,,,2025-11-16 03:54:27
+REV13053,CUST1053,ONI003,3,Good produce,Pieces were slightly overripe.,2025-11-03 01:03:23,True,16,,,2025-11-23 06:02:55
+REV13054,CUST1054,GUR010,4,Fresh quality,"Good quality, would buy again.",2025-10-24 19:02:16,True,18,,,2025-11-23 11:44:28
+REV13055,CUST1055,ONI003,3,Good produce,"Very fresh produce, delivered quickly.",2025-11-04 07:03:30,True,12,,,2025-11-26 23:51:46
+REV13056,CUST1056,COW005,3,Satisfactory,"Good quality, would buy again.",2025-11-16 06:34:25,True,6,,,2025-11-28 23:20:18
+REV13057,CUST1057,POT002,5,Too ripe,"Very fresh produce, delivered quickly.",2025-11-17 04:16:22,True,11,,,2025-11-07 23:25:59
+REV13058,CUST1058,ONI003,5,Fresh quality,Packaging can be improved.,2025-11-18 00:24:12,True,5,,,2025-10-28 09:40:27
+REV13059,CUST1059,COW005,3,Fresh quality,"Good quality, would buy again.",2025-11-05 10:25:36,True,20,,,2025-11-24 21:37:50
+REV13060,CUST1060,POT002,4,Fresh quality,"Good quality, would buy again.",2025-11-29 23:13:35,True,1,,,2025-11-25 05:51:46
+REV13061,CUST1061,BTR006,5,Satisfactory,"Good quality, would buy again.",2025-11-26 02:10:09,True,4,,,2025-11-23 14:13:36
+REV13062,CUST1062,BTR006,5,Satisfactory,Pieces were slightly overripe.,2025-11-07 13:15:33,True,20,,,2025-11-23 08:35:31
+REV13063,CUST1063,TOM001,3,Good produce,Pieces were slightly overripe.,2025-10-29 13:37:32,True,12,,,2025-11-19 22:03:18
+REV13064,CUST1064,ONI003,5,Too ripe,Packaging can be improved.,2025-11-17 20:19:08,True,14,,,2025-11-26 21:53:01
+REV13065,CUST1065,POT002,5,Too ripe,Packaging can be improved.,2025-11-02 02:08:07,True,20,,,2025-11-12 05:25:21
+REV13066,CUST1066,TOM001,3,Fresh quality,"Good quality, would buy again.",2025-11-18 05:46:21,True,3,,,2025-11-15 02:25:38
+REV13067,CUST1067,GUR010,4,Fresh quality,Packaging can be improved.,2025-11-12 07:14:54,True,1,,,2025-10-28 23:08:59
+REV13068,CUST1068,COW005,4,Fresh quality,"Very fresh produce, delivered quickly.",2025-11-22 16:52:46,True,20,,,2025-10-24 10:22:15
+REV13069,CUST1069,BTR006,5,Good produce,Packaging can be improved.,2025-11-14 17:43:00,True,14,,,2025-11-07 14:45:00
+REV13070,CUST1070,BTR006,3,Good produce,"Good quality, would buy again.",2025-10-24 13:16:16,True,14,,,2025-11-07 18:56:42
+REV13071,CUST1071,CAR004,5,Fresh quality,"Very fresh produce, delivered quickly.",2025-11-11 14:58:06,True,3,,,2025-10-27 05:20:21
+REV13072,CUST1072,APP009,5,Good produce,Pieces were slightly overripe.,2025-10-28 05:18:22,True,3,,,2025-11-27 04:41:31
+REV13073,CUST1073,APP009,4,Too ripe,"Good quality, would buy again.",2025-11-09 06:14:34,True,4,,,2025-11-29 21:31:28
+REV13074,CUST1074,ONI003,3,Good produce,Packaging can be improved.,2025-11-09 13:07:56,True,7,,,2025-11-10 01:40:04
+REV13075,CUST1075,CAR004,4,Too ripe,Packaging can be improved.,2025-12-01 09:38:05,True,3,,,2025-10-28 02:39:54
+REV13076,CUST1076,BTR006,4,Satisfactory,"Good quality, would buy again.",2025-10-25 12:19:21,True,0,,,2025-11-16 09:01:52
+REV13077,CUST1077,GUR010,4,Fresh quality,Pieces were slightly overripe.,2025-11-06 22:10:14,True,17,,,2025-12-01 13:32:58
+REV13078,CUST1078,GUR010,5,Satisfactory,Pieces were slightly overripe.,2025-11-21 07:12:27,True,6,,,2025-11-22 18:39:32
+REV13079,CUST1079,BRN007,3,Too ripe,"Good quality, would buy again.",2025-11-18 20:46:30,True,15,,,2025-10-29 08:39:40
+REV13080,CUST1080,BRN007,4,Satisfactory,Packaging can be improved.,2025-11-19 17:02:31,True,10,,,2025-11-17 17:01:38
+REV13081,CUST1081,CAR004,5,Fresh quality,Pieces were slightly overripe.,2025-11-11 21:28:50,True,15,,,2025-12-01 00:18:20
+REV13082,CUST1082,BTR006,3,Satisfactory,"Very fresh produce, delivered quickly.",2025-11-29 01:41:27,True,4,,,2025-11-21 19:35:02
+REV13083,CUST1083,CAR004,5,Satisfactory,"Good quality, would buy again.",2025-11-10 21:50:39,True,13,,,2025-10-28 11:25:50
+REV13084,CUST1084,ONI003,4,Fresh quality,Packaging can be improved.,2025-10-27 14:27:05,True,11,,,2025-11-10 11:28:20
+REV13085,CUST1085,LIM008,4,Good produce,"Very fresh produce, delivered quickly.",2025-11-19 08:11:41,True,16,,,2025-11-18 00:40:30
+REV13086,CUST1086,GUR010,5,Fresh quality,Packaging can be improved.,2025-11-21 22:22:11,True,13,,,2025-10-24 17:51:01
+REV13087,CUST1087,ONI003,5,Satisfactory,Pieces were slightly overripe.,2025-10-26 12:30:56,True,2,,,2025-11-16 02:21:14
+REV13088,CUST1088,COW005,4,Too ripe,Pieces were slightly overripe.,2025-10-26 21:34:30,True,15,,,2025-11-28 00:57:06
+REV13089,CUST1089,COW005,5,Fresh quality,Pieces were slightly overripe.,2025-11-16 19:35:42,True,11,,,2025-11-13 16:32:41
+REV13090,CUST1090,GUR010,3,Good produce,Pieces were slightly overripe.,2025-10-29 12:40:30,True,6,,,2025-11-21 04:19:29
+REV13091,CUST1091,TOM001,5,Fresh quality,Pieces were slightly overripe.,2025-11-14 13:20:34,True,8,,,2025-10-23 18:55:52
+REV13092,CUST1092,APP009,4,Too ripe,Pieces were slightly overripe.,2025-12-02 09:25:10,True,16,,,2025-10-27 06:03:33
+REV13093,CUST1093,BTR006,3,Good produce,"Very fresh produce, delivered quickly.",2025-11-27 19:24:42,True,2,,,2025-11-01 10:37:37
+REV13094,CUST1094,BTR006,4,Good produce,"Good quality, would buy again.",2025-11-12 12:53:24,True,6,,,2025-11-17 00:30:25
+REV13095,CUST1095,POT002,5,Fresh quality,"Very fresh produce, delivered quickly.",2025-11-02 18:53:36,True,8,,,2025-11-23 13:28:21
+REV13096,CUST1096,ONI003,4,Satisfactory,"Good quality, would buy again.",2025-10-29 01:57:55,True,14,,,2025-11-09 16:42:30
+REV13097,CUST1097,BRN007,4,Too ripe,"Good quality, would buy again.",2025-11-29 05:18:40,True,9,,,2025-11-12 02:46:13
+REV13098,CUST1098,BTR006,5,Satisfactory,Packaging can be improved.,2025-10-31 14:19:16,True,9,,,2025-11-23 20:56:00
+REV13099,CUST1099,BTR006,4,Fresh quality,Pieces were slightly overripe.,2025-11-05 01:40:00,True,6,,,2025-11-01 10:38:15
+REV13100,CUST1100,GUR010,3,Too ripe,"Very fresh produce, delivered quickly.",2025-10-26 08:00:24,True,6,,,2025-11-11 08:34:56

@@ -1,0 +1,14 @@
+======================================================================
+SYNTHETIC SEED DATA GENERATOR
+======================================================================
+Output directory: C:\Users\Aritra B\Desktop\workspace\zuna\data\seed_data
+Random seed: 42
+
+Generating suppliers...
+Traceback (most recent call last):
+  File "C:\Users\Aritra B\Desktop\workspace\zuna\scripts\generate_synthetic_seed_data.py", line 107, in <module>
+    print(f"  \u2713 Generated {len(suppliers_df)} suppliers")
+  File "C:\Users\Aritra B\AppData\Roaming\uv\python\cpython-3.12.12-windows-x86_64-none\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2713' in position 2: character maps to <undefined>

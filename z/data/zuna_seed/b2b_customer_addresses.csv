@@ -1,0 +1,51 @@
+address_id,customer_id,addr_line1,addr_line2,city,state,pincode,country,latitude,longitude
+ADDR2001,CUST1001,57 Varachha Road,Near Bus Stop,Surat,Gujarat,384422,India,22.811769,72.556371
+ADDR2002,CUST1002,297 Ring Road,Beside Cold Storage,Nadiad,Gujarat,368011,India,22.410809,72.873607
+ADDR2003,CUST1003,36 Station Road,,Gandhinagar,Gujarat,380477,India,22.351646,72.577919
+ADDR2004,CUST1004,89 Varachha Road,Opposite Market,Rajkot,Gujarat,367093,India,22.350114,72.556265
+ADDR2005,CUST1005,152 Ring Road,Opposite Market,Surat,Gujarat,388123,India,22.845155,72.974547
+ADDR2006,CUST1006,295 MG Road,,Nadiad,Gujarat,377528,India,22.028953,72.27327
+ADDR2007,CUST1007,183 Station Road,Near Bus Stop,Bhavnagar,Gujarat,371889,India,22.869863,72.566321
+ADDR2008,CUST1008,45 Main Road,Near Bus Stop,Gandhinagar,Gujarat,366014,India,22.746112,72.215133
+ADDR2009,CUST1009,242 Station Road,Opposite Market,Gandhinagar,Gujarat,384252,India,22.311637,72.324383
+ADDR2010,CUST1010,53 MG Road,Opposite Market,Nadiad,Gujarat,370317,India,22.754436,72.049762
+ADDR2011,CUST1011,149 Varachha Road,Behind Mall,Surat,Gujarat,391829,India,22.607076,72.414184
+ADDR2012,CUST1012,272 MG Road,Beside Cold Storage,Rajkot,Gujarat,388175,India,22.11089,72.678218
+ADDR2013,CUST1013,259 Ring Road,Beside Cold Storage,Nadiad,Gujarat,362977,India,22.220518,72.984446
+ADDR2014,CUST1014,13 Main Road,Beside Cold Storage,Ahmedabad,Gujarat,373844,India,22.76735,72.764161
+ADDR2015,CUST1015,177 MG Road,Near Bus Stop,Bhavnagar,Gujarat,392597,India,22.747014,72.175695
+ADDR2016,CUST1016,282 Main Road,,Gandhinagar,Gujarat,383211,India,22.072075,72.861764
+ADDR2017,CUST1017,233 MG Road,Behind Mall,Ahmedabad,Gujarat,365103,India,22.86211,72.575759
+ADDR2018,CUST1018,217 Varachha Road,Beside Cold Storage,Nadiad,Gujarat,367549,India,22.405032,72.9662
+ADDR2019,CUST1019,245 Station Road,Near Bus Stop,Vadodara,Gujarat,388621,India,22.844484,72.243316
+ADDR2020,CUST1020,215 Ring Road,Near Bus Stop,Nadiad,Gujarat,385937,India,22.870524,72.745805
+ADDR2021,CUST1021,180 Main Road,Near Bus Stop,Rajkot,Gujarat,393456,India,22.633225,72.530605
+ADDR2022,CUST1022,188 Station Road,Opposite Market,Rajkot,Gujarat,375485,India,22.102805,72.255968
+ADDR2023,CUST1023,88 MG Road,Opposite Market,Vadodara,Gujarat,392383,India,22.463953,72.563735
+ADDR2024,CUST1024,239 Ring Road,,Nadiad,Gujarat,381182,India,22.864247,72.627217
+ADDR2025,CUST1025,235 MG Road,Behind Mall,Vadodara,Gujarat,388981,India,22.631385,72.79633
+ADDR2026,CUST1026,38 Station Road,,Nadiad,Gujarat,364863,India,22.310408,72.451914
+ADDR2027,CUST1027,198 Station Road,Near Bus Stop,Ahmedabad,Gujarat,365918,India,22.615008,72.507068
+ADDR2028,CUST1028,293 MG Road,Behind Mall,Navsari,Gujarat,372337,India,22.321527,72.475629
+ADDR2029,CUST1029,41 Varachha Road,Near Bus Stop,Vadodara,Gujarat,382508,India,22.982386,72.084329
+ADDR2030,CUST1030,30 Main Road,Behind Mall,Vadodara,Gujarat,388798,India,22.524069,72.609805
+ADDR2031,CUST1031,200 Station Road,Behind Mall,Jamnagar,Gujarat,386790,India,22.774465,72.678898
+ADDR2032,CUST1032,181 MG Road,Beside Cold Storage,Ahmedabad,Gujarat,366194,India,22.557963,72.386564
+ADDR2033,CUST1033,86 Station Road,Near Bus Stop,Bhavnagar,Gujarat,369269,India,22.916746,72.310232
+ADDR2034,CUST1034,76 Ring Road,Near Bus Stop,Gandhinagar,Gujarat,380289,India,22.558922,72.643493
+ADDR2035,CUST1035,75 Ring Road,Near Bus Stop,Jamnagar,Gujarat,387749,India,22.508488,72.018231
+ADDR2036,CUST1036,102 Main Road,Beside Cold Storage,Bhavnagar,Gujarat,391869,India,22.192005,72.999977
+ADDR2037,CUST1037,49 Station Road,Near Bus Stop,Vadodara,Gujarat,393272,India,22.770875,72.83512
+ADDR2038,CUST1038,29 Station Road,,Anand,Gujarat,368589,India,22.597246,72.154253
+ADDR2039,CUST1039,94 Varachha Road,Near Bus Stop,Vadodara,Gujarat,386927,India,22.364299,72.719586
+ADDR2040,CUST1040,155 Varachha Road,Opposite Market,Navsari,Gujarat,394997,India,22.239168,72.965597
+ADDR2041,CUST1041,109 Station Road,,Navsari,Gujarat,388875,India,22.46168,72.281772
+ADDR2042,CUST1042,267 Ring Road,Behind Mall,Gandhinagar,Gujarat,370621,India,22.816891,72.801259
+ADDR2043,CUST1043,138 MG Road,Behind Mall,Vadodara,Gujarat,384328,India,22.554541,72.10259
+ADDR2044,CUST1044,73 Station Road,Near Bus Stop,Anand,Gujarat,370507,India,22.272791,72.905306
+ADDR2045,CUST1045,233 MG Road,Opposite Market,Vadodara,Gujarat,389566,India,22.88463,72.930472
+ADDR2046,CUST1046,37 Varachha Road,,Gandhinagar,Gujarat,384508,India,22.235778,72.994525
+ADDR2047,CUST1047,124 MG Road,Beside Cold Storage,Jamnagar,Gujarat,366494,India,22.839176,72.649961
+ADDR2048,CUST1048,80 MG Road,Beside Cold Storage,Vadodara,Gujarat,390963,India,22.696072,72.138793
+ADDR2049,CUST1049,239 Ring Road,Near Bus Stop,Navsari,Gujarat,365193,India,22.019004,72.215655
+ADDR2050,CUST1050,290 Ring Road,,Vadodara,Gujarat,387739,India,22.111187,72.288102

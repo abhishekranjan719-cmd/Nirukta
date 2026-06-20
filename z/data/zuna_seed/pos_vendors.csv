@@ -1,0 +1,41 @@
+vendor_id,vendor_name,phone,email,address,city,gst_no,business_type,created_at
+POSV1001,Chana and Sons,+91 9775945807,chanaandsons@vendor.in,"684, Contractor Chowk, Hosur-690350",Gandhinagar,249869411151095,Cleaning Services,2025-12-02 11:03:52
+POSV1002,Sengupta Ltd,+91 8134826905,senguptaltd@vendor.in,"95/80, Bir Road, Begusarai-116883",Ahmedabad,249298188471872,Equipment Repair,2025-12-02 11:03:52
+POSV1003,"Buch, Bansal and Talwar",+91 8396162718,"buch,bansalandtalwar@vendor.in","85, Kara Circle, Jammu-667668",Gandhinagar,246854312189007,Store Supplies,2025-12-02 11:03:52
+POSV1004,Randhawa and Sons,+91 9217617666,randhawaandsons@vendor.in,"03, Kara Circle, Ramagundam-438508",Nadiad,247598589809054,Equipment Repair,2025-12-02 11:03:52
+POSV1005,"Varkey, Chacko and Grewal",+91 9476047587,"varkey,chackoandgrewal@vendor.in","H.No. 42, Das Circle, Anand 421094",Vadodara,242251444628979,Packaging,2025-12-02 11:03:52
+POSV1006,Varty PLC,+91 8151693921,vartyplc@vendor.in,"48/98, Aggarwal Ganj, Saharsa 080753",Navsari,249479686003522,Equipment Repair,2025-12-02 11:03:52
+POSV1007,"Contractor, Sahni and Sarraf",+91 7540674150,"contractor,sahniandsarraf@vendor.in","H.No. 042, Bahri Chowk, Madanapalle-548943",Gandhinagar,244802911929743,Equipment Repair,2025-12-02 11:03:52
+POSV1008,"Sheth, Chokshi and Srinivas",+91 9853739630,"sheth,chokshiandsrinivas@vendor.in","471, Kota Marg, Bardhaman-805445",Vadodara,244647646320038,Equipment Repair,2025-12-02 11:03:52
+POSV1009,Master and Sons,+91 8861775043,masterandsons@vendor.in,"H.No. 80, Kapur Circle, Khammam 189310",Navsari,248677867089244,Store Supplies,2025-12-02 11:03:52
+POSV1010,Lad-Walia,+91 8522159552,lad-walia@vendor.in,"18, Uppal Road, Yamunanagar-714178",Anand,242675941709872,Equipment Repair,2025-12-02 11:03:52
+POSV1011,"Kara, Singh and Dugal",+91 8553870272,"kara,singhanddugal@vendor.in","262, Kakar Road, Patna-578653",Gandhinagar,243319478598141,Hardware,2025-12-02 11:03:52
+POSV1012,Khosla-Majumdar,+91 9690077660,khosla-majumdar@vendor.in,"03, Verma Street, Bhubaneswar-458615",Bharuch,244721247624069,Hardware,2025-12-02 11:03:52
+POSV1013,Khurana-Ramaswamy,+91 7922209067,khurana-ramaswamy@vendor.in,"H.No. 996, Chaudry Circle, Ongole 289082",Gandhinagar,248192267150885,Packaging,2025-12-02 11:03:52
+POSV1014,Kibe Inc,+91 7982516212,kibeinc@vendor.in,"339, Anne Circle, Amroha-272243",Anand,243543881108069,Equipment Repair,2025-12-02 11:03:52
+POSV1015,"Shroff, Konda and Dugar",+91 7820213407,"shroff,kondaanddugar@vendor.in","69/71, Gour Circle, Kochi-777163",Vadodara,248984308534965,Equipment Repair,2025-12-02 11:03:52
+POSV1016,Sankaran LLC,+91 8469395879,sankaranllc@vendor.in,"78/611, Shenoy Circle, Buxar-834402",Anand,240220365710503,Hardware,2025-12-02 11:03:52
+POSV1017,Rege-Saxena,+91 8532150994,rege-saxena@vendor.in,"88/974, Grover Ganj, Ghaziabad-842049",Vadodara,240733251379464,Equipment Repair,2025-12-02 11:03:52
+POSV1018,Ratti-Dass,+91 9159493232,ratti-dass@vendor.in,"56/753, Jayaraman Circle, Karaikudi-453924",Ahmedabad,242694054298634,Packaging,2025-12-02 11:03:52
+POSV1019,Venkataraman and Sons,+91 7805092626,venkataramanandsons@vendor.in,"40, Bava Circle, Tirupati-890208",Navsari,247069946705611,Cleaning Services,2025-12-02 11:03:52
+POSV1020,Boase-Sunder,+91 9517256651,boase-sunder@vendor.in,"H.No. 578, Taneja Marg, Bally 961205",Anand,247610299894367,Hardware,2025-12-02 11:03:52
+POSV1021,Sandal PLC,+91 7193691137,sandalplc@vendor.in,"24, Shetty Marg, Saharanpur 225624",Nadiad,247635757391393,Store Supplies,2025-12-02 11:03:52
+POSV1022,Choudhary-Kashyap,+91 8133848541,choudhary-kashyap@vendor.in,"65, Goswami Road, Bidar-037070",Navsari,248736424065576,Equipment Repair,2025-12-02 11:03:52
+POSV1023,Tella Inc,+91 8481092713,tellainc@vendor.in,"H.No. 38, Seshadri Circle, Tiruvottiyur 843711",Anand,246126546143712,Equipment Repair,2025-12-02 11:03:52
+POSV1024,Sabharwal-Solanki,+91 8234553185,sabharwal-solanki@vendor.in,"11/78, Krishna Zila, Ozhukarai 589186",Gandhinagar,248508178265775,Packaging,2025-12-02 11:03:52
+POSV1025,Dalal PLC,+91 9819689981,dalalplc@vendor.in,"71/95, Baral Chowk, Rewa 100047",Rajkot,244971238622293,Cleaning Services,2025-12-02 11:03:52
+POSV1026,"Srinivasan, Banerjee and Subramaniam",+91 7874298683,"srinivasan,banerjeeandsubramaniam@vendor.in","59/00, Yohannan Ganj, Kolkata 146391",Navsari,244131938183501,Store Supplies,2025-12-02 11:03:52
+POSV1027,Bobal Group,+91 9818728153,bobalgroup@vendor.in,"62, Bhakta Ganj, Chittoor-126056",Anand,246167076094451,Equipment Repair,2025-12-02 11:03:52
+POSV1028,"Sarna, Brar and Ratta",+91 9697612331,"sarna,brarandratta@vendor.in","20, D’Alia Zila, Ajmer-487630",Vadodara,246533869924742,Store Supplies,2025-12-02 11:03:52
+POSV1029,Sarraf PLC,+91 9169210322,sarrafplc@vendor.in,"03/19, Sankaran Marg, Nellore 913582",Bharuch,245848860396265,Equipment Repair,2025-12-02 11:03:52
+POSV1030,"Kala, Dash and Kothari",+91 9804319359,"kala,dashandkothari@vendor.in","H.No. 91, Lad, Deoghar-339172",Ahmedabad,248491781656006,Store Supplies,2025-12-02 11:03:52
+POSV1031,Singh and Sons,+91 9737191407,singhandsons@vendor.in,"75/413, Keer Circle, Serampore-440547",Surat,245410526529116,Hardware,2025-12-02 11:03:52
+POSV1032,Goda-Char,+91 8458360876,goda-char@vendor.in,"07/02, Manne Road, Alwar-071787",Nadiad,243210692529795,Hardware,2025-12-02 11:03:52
+POSV1033,"Mandal, Kade and Kota",+91 8399932418,"mandal,kadeandkota@vendor.in","H.No. 454, Krish Path, Kolhapur-537373",Surat,242358569833223,Cleaning Services,2025-12-02 11:03:52
+POSV1034,Zacharia Group,+91 8434847987,zachariagroup@vendor.in,"H.No. 49, Sengupta Chowk, Ujjain-695143",Ahmedabad,246110521395484,Cleaning Services,2025-12-02 11:03:52
+POSV1035,Raju-Bumb,+91 7634143946,raju-bumb@vendor.in,"H.No. 85, Venkatesh Ganj, Faridabad 970895",Vadodara,242893829028771,Packaging,2025-12-02 11:03:52
+POSV1036,Kulkarni Ltd,+91 9106170830,kulkarniltd@vendor.in,"H.No. 374, Mani Circle, Panchkula 637692",Gandhinagar,246432289545796,Store Supplies,2025-12-02 11:03:52
+POSV1037,Issac-Banerjee,+91 9271356288,issac-banerjee@vendor.in,"04/47, Dhar, Khammam-515949",Ahmedabad,241665905983773,Cleaning Services,2025-12-02 11:03:52
+POSV1038,Jayaraman Inc,+91 8088659948,jayaramaninc@vendor.in,"H.No. 610, Bahri Path, Khora -719537",Gandhinagar,245274015158103,Cleaning Services,2025-12-02 11:03:52
+POSV1039,Mall Inc,+91 8704958652,mallinc@vendor.in,"98/84, Mani Chowk, Bharatpur 115451",Anand,247834424163059,Equipment Repair,2025-12-02 11:03:52
+POSV1040,Doctor-Chhabra,+91 8069608665,doctor-chhabra@vendor.in,"70, Rajagopalan Nagar, Nizamabad-886828",Bharuch,245271808165262,Hardware,2025-12-02 11:03:52

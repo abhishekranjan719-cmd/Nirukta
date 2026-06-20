@@ -1,0 +1,11 @@
+sku,plucode,name,uom,pos_price,tax_rate,stock_qty,reorder_point,active_flag,updated_at
+TOM001,4011,Tomato (Desi) 1kg,kg,32,0.05,51,38,True,2025-11-06 13:38:06
+POT002,4022,Potato (Jyoti) 1kg,kg,22,0.05,218,21,True,2025-11-08 20:05:57
+ONI003,4033,Onion (Red Nashik) 1kg,kg,28,0.05,415,33,True,2025-11-05 11:45:22
+CAR004,4561,Carrot 1kg,kg,48,0.05,367,42,True,2025-11-16 15:01:07
+COW005,4055,Cucumber 1kg,kg,24,0.05,266,49,True,2025-11-05 21:09:12
+BRN007,4066,Brinjal 1kg,kg,30,0.05,27,50,True,2025-11-13 17:32:34
+LIM008,4077,Lemon 500g,500g,25,0.05,186,49,True,2025-11-27 16:53:00
+APP009,4025,Apple (Kinnaur) 1kg,kg,185,0.05,492,45,True,2025-11-08 11:36:52
+GUR010,4088,Ginger 250g,250g,60,0.05,206,17,True,2025-12-02 06:58:13
+BTR006,4099,Bitter Gourd 1kg,kg,70,0.05,60,41,True,2025-11-26 18:12:13

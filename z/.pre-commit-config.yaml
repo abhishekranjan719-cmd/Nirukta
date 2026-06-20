@@ -1,0 +1,196 @@
+# Pre-commit hooks configuration for Z project
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+
+# ============================================================================
+# Configuration
+# ============================================================================
+default_language_version:
+  python: python3.12
+
+fail_fast: false
+default_stages: [pre-commit]
+
+# ============================================================================
+# Repositories and Hooks
+# ============================================================================
+repos:
+  # ---------------------------------------------------------------------------
+  # Standard Pre-commit Hooks
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      # File checks
+      - id: trailing-whitespace
+        name: Trim trailing whitespace
+        description: Removes trailing whitespace from all files
+        exclude: '\.md$'  # Allow trailing whitespace in markdown
+
+      - id: end-of-file-fixer
+        name: Fix end of files
+        description: Ensures files end with a newline
+
+      - id: check-added-large-files
+        name: Check for large files
+        description: Prevents giant files from being committed
+        args: ['--maxkb=5000']  # Max 5MB
+
+      - id: check-case-conflict
+        name: Check for case conflicts
+        description: Checks for files with names that would conflict on case-insensitive filesystems
+
+      - id: check-merge-conflict
+        name: Check for merge conflicts
+        description: Checks for files that contain merge conflict strings
+
+      - id: check-executables-have-shebangs
+        name: Check executables have shebangs
+        description: Ensures executables have proper shebangs
+
+      - id: check-shebang-scripts-are-executable
+        name: Check shebangs are executable
+        description: Ensures scripts with shebangs are executable
+
+      # YAML/JSON/TOML checks
+      - id: check-yaml
+        name: Check YAML syntax
+        description: Validates YAML file syntax
+        args: ['--unsafe']  # Allow custom YAML tags
+        exclude: 'docker-compose\.yml$|\.github/.*\.yml$'
+
+      - id: check-json
+        name: Check JSON syntax
+        description: Validates JSON file syntax
+        exclude: 'tsconfig.*\.json$'  # Exclude TypeScript config (uses JSON5 comments)
+
+      - id: check-toml
+        name: Check TOML syntax
+        description: Validates TOML file syntax
+
+      # Security checks
+      - id: detect-private-key
+        name: Detect private keys
+        description: Detects private keys committed in the repository
+
+      - id: check-ast
+        name: Check Python AST
+        description: Checks whether files parse as valid Python
+
+  # ---------------------------------------------------------------------------
+  # Secret Detection - Prevent .env and secrets from being committed
+  # ---------------------------------------------------------------------------
+  - repo: local
+    hooks:
+      - id: prevent-env-commit
+        name: Prevent .env file commit
+        description: Blocks commits that include .env files with secrets
+        entry: >
+          bash -c '
+          if git diff --cached --name-only | grep -q "^.env$"; then
+            echo "ERROR: Attempted to commit .env file!";
+            exit 1;
+          fi
+          '
+        language: system
+        pass_filenames: false
+        always_run: true
+
+      - id: check-secrets-in-code
+        name: Check for hardcoded secrets
+        description: Scans for potential hardcoded secrets in code
+        entry: >
+          bash -c '
+          if git diff --cached --diff-filter=ACMR | grep -iE "api.*key|secret|password|token" | grep -q "="; then
+            echo "WARNING: Potential hardcoded secret detected!";
+            exit 1;
+          fi
+          '
+        language: system
+        pass_filenames: false
+
+  # ---------------------------------------------------------------------------
+  # Ruff - Python Linting and Formatting (v0.14.10)
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.4
+    hooks:
+      # Ruff Linter (with --fix for auto-fixes)
+      - id: ruff
+        name: Ruff Linter
+        description: Run Ruff linter with auto-fixes (includes security checks S*)
+        args:
+          - --fix
+          - --exit-non-zero-on-fix
+        types_or: [python, pyi]
+        require_serial: true
+
+      # Ruff Formatter
+      - id: ruff-format
+        name: Ruff Formatter
+        description: Run Ruff formatter (replaces Black)
+        types_or: [python, pyi]
+        require_serial: true
+
+  # ---------------------------------------------------------------------------
+  # Additional Python Quality Checks
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/pycqa/bandit
+    rev: 1.8.0
+    hooks:
+      - id: bandit
+        name: Bandit Security Scan
+        description: Security-focused static analyzer for Python (additional to Ruff S*)
+        args:
+          - --configfile=pyproject.toml
+          - --severity-level=medium
+          - --confidence-level=medium
+        exclude: 'tests/.*|scripts/.*'
+
+  # ---------------------------------------------------------------------------
+  # YAML Linting
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        name: YAML Lint
+        description: Lints YAML files
+        args: [--strict, -c=.yamllint.yaml]
+        exclude: 'docker-compose\.yml$|\.github/.*\.yml$'
+
+  # ---------------------------------------------------------------------------
+  # Markdown Linting
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/igorshubovych/markdownlint-cli
+    rev: v0.43.0
+    hooks:
+      - id: markdownlint
+        name: Markdown Lint
+        description: Lints Markdown files
+        args: [--fix, --disable, MD013, MD033, MD041]
+
+  # ---------------------------------------------------------------------------
+  # Dockerfile Linting
+  # ---------------------------------------------------------------------------
+  - repo: https://github.com/hadolint/hadolint
+    rev: v2.12.0
+    hooks:
+      - id: hadolint-docker
+        name: Hadolint Dockerfile Linter
+        description: Lints Dockerfiles for best practices
+
+# ============================================================================
+# CI Configuration
+# ============================================================================
+ci:
+  autofix_commit_msg: |
+    [pre-commit.ci] auto fixes from pre-commit hooks
+
+    for more information, see https://pre-commit.ci
+  autofix_prs: true
+  autoupdate_branch: ''
+  autoupdate_commit_msg: '[pre-commit.ci] pre-commit autoupdate'
+  autoupdate_schedule: weekly
+  skip: []
+  submodules: false

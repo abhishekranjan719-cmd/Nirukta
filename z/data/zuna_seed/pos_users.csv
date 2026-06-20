@@ -1,0 +1,4 @@
+pos_user_id,name,role,phone,email,store_id,active_flag,created_at,last_login,pin_hash
+PU1001,Ramesh Patel,Cashier,+91 8045349625,ramesh.patel@example.com,STORE_RJT_001,True,2025-09-28 01:40:05,2025-11-30 08:06:01,fc9d83a3c0c6238295b5cc482fb919ba4882d47a0008497c4ca9a998148183d1
+PU1002,Seema Desai,Supervisor,+91 9648298251,seema.desai@example.com,STORE_VDR_001,True,2025-06-26 17:22:12,2025-11-30 07:26:18,b2225f870adfba4c7b8af71a67da0a42eb67290814bd148ff8a552033108fd35
+PU1003,Kishan Mehta,Cashier,+91 7698223135,kishan.mehta@example.com,STORE_AHD_001,True,2025-09-28 04:10:59,2025-11-26 18:33:36,9b5b9ac8ab061febc46c923f52bac85786c54bc28cfb7afdd73d729f28b2da53

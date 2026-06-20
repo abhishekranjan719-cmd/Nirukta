@@ -1,0 +1,11 @@
+sku,product_name,product_type,category,subcategory,brand,uom,gross_weight_kg,net_weight_kg,pack_size,hs_code,shelf_life_days,storage_temp_c,is_perishable_flag,created_at,default_image_url
+TOM001,Tomato - Local (1kg),Vegetable,Fresh Produce,Tomato,Daily Greens,kg,1.0,1.0,1,,5,4,True,2024-11-23 02:31:53,
+POT002,Potato - Jyoti (1kg),Vegetable,Fresh Produce,Potato,Daily Greens,kg,1.0,1.0,1,,10,15,True,2024-11-25 07:44:26,
+ONI003,Onion - Red Nashik (1kg),Vegetable,Fresh Produce,Onion,Daily Greens,kg,1.0,1.0,1,,5,4,True,2025-07-28 08:35:26,
+CAR004,Carrot - Orange (1kg),Vegetable,Fresh Produce,Carrot,Daily Greens,kg,1.0,1.0,1,,10,10,True,2024-11-24 03:29:13,
+COW005,Cucumber - Slicing (1kg),Vegetable,Fresh Produce,Cucumber,Daily Greens,kg,1.0,1.0,1,,10,4,True,2024-01-03 02:39:54,
+BTR006,Bitter Gourd (1kg),Vegetable,Fresh Produce,Bitter Gourd (1kg),Daily Greens,kg,1.0,1.0,1,,3,10,True,2025-01-27 19:59:19,
+BRN007,Brinjal - Long (1kg),Vegetable,Fresh Produce,Brinjal,Daily Greens,kg,1.0,1.0,1,,7,15,True,2024-08-25 01:28:30,
+LIM008,Lemon - Khatta (500g),Vegetable,Fresh Produce,Lemon,Daily Greens,500g,0.5,0.5,1,,10,10,True,2025-03-15 01:14:42,
+APP009,Apple - Kinnaur (1kg),Fruit,Fresh Produce,Apple,Daily Greens,kg,1.0,1.0,1,,7,10,True,2023-11-01 11:21:22,
+GUR010,Ginger - Fresh (250g),Vegetable,Fresh Produce,Ginger,Daily Greens,250g,0.5,0.5,1,,3,10,True,2023-10-21 07:04:58,

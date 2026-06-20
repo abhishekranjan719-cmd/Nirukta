@@ -1,0 +1,61 @@
+agent_id,name,phone,email,region,specialization,commission_rate_pct,join_date,status,created_at
+B2BAG2001,Indranil Das,+91 9422812463,indranil.das@dailygreens.in,Gandhinagar,Caterer,0.59,2021-10-24,ACTIVE,2025-11-25 20:11:05
+B2BAG2002,Adira Warrior,+91 7077011159,adira.warrior@dailygreens.in,Navsari,Retail Chain,4.6,2024-02-12,ACTIVE,2024-11-24 18:14:16
+B2BAG2003,Vidur Choudhury,+91 7180834452,vidur.choudhury@dailygreens.in,Vadodara,Retail Chain,4.26,2024-07-16,ACTIVE,2025-01-04 21:19:25
+B2BAG2004,Badal Sangha,+91 9193444631,badal.sangha@dailygreens.in,Gandhinagar,Retail Chain,2.65,2023-06-06,ACTIVE,2024-04-01 08:52:13
+B2BAG2005,Samar Mannan,+91 9159846609,samar.mannan@dailygreens.in,Bharuch,Caterer,0.73,2021-04-05,ACTIVE,2021-12-05 22:42:20
+B2BAG2006,Vivaan Tara,+91 8450662343,vivaan.tara@dailygreens.in,Surat,Caterer,3.23,2023-06-06,INACTIVE,2023-06-25 17:29:54
+B2BAG2007,Nitya Wason,+91 9997242700,nitya.wason@dailygreens.in,Surat,Wholesale,4.55,2024-01-09,INACTIVE,2025-10-20 02:57:57
+B2BAG2008,Saanvi Jaggi,+91 9270214272,saanvi.jaggi@dailygreens.in,Navsari,Wholesale,2.39,2025-09-27,INACTIVE,2025-10-24 17:45:47
+B2BAG2009,Prerak Hayer,+91 7315198117,prerak.hayer@dailygreens.in,Gandhinagar,Wholesale,0.64,2024-09-07,ACTIVE,2025-02-17 14:53:36
+B2BAG2010,Miraya Bora,+91 7796071476,miraya.bora@dailygreens.in,Vadodara,Retail Chain,4.72,2025-03-17,INACTIVE,2025-05-31 19:08:19
+B2BAG2011,Zoya Borde,+91 7071887476,zoya.borde@dailygreens.in,Navsari,Wholesale,3.55,2024-01-20,INACTIVE,2025-08-28 03:34:48
+B2BAG2012,Amira Deep,+91 7926249926,amira.deep@dailygreens.in,Navsari,HORECA,0.57,2021-10-12,INACTIVE,2024-07-28 04:28:06
+B2BAG2013,Gatik Swamy,+91 7590896413,gatik.swamy@dailygreens.in,Vadodara,Wholesale,3.42,2024-07-08,INACTIVE,2025-04-16 16:34:54
+B2BAG2014,Piya Hegde,+91 7640784819,piya.hegde@dailygreens.in,Anand,Caterer,4.81,2023-08-08,ACTIVE,2025-07-27 07:17:22
+B2BAG2015,Sahil Ahuja,+91 7963795702,sahil.ahuja@dailygreens.in,Rajkot,Wholesale,4.92,2024-04-18,INACTIVE,2024-09-30 03:39:00
+B2BAG2016,Veer Gola,+91 8964496259,veer.gola@dailygreens.in,Rajkot,Caterer,3.23,2023-10-24,INACTIVE,2024-11-22 03:51:02
+B2BAG2017,Farhan Kapur,+91 8482636955,farhan.kapur@dailygreens.in,Vadodara,Caterer,3.59,2021-11-25,INACTIVE,2022-04-04 20:26:37
+B2BAG2018,Aarna Mangal,+91 7580579940,aarna.mangal@dailygreens.in,Vadodara,Caterer,4.31,2024-05-24,INACTIVE,2025-05-15 23:13:31
+B2BAG2019,Kismat Chowdhury,+91 8055924932,kismat.chowdhury@dailygreens.in,Vadodara,Retail Chain,3.88,2022-06-24,INACTIVE,2023-09-03 01:16:31
+B2BAG2020,Indrans Comar,+91 8499607906,indrans.comar@dailygreens.in,Rajkot,Caterer,0.77,2023-07-25,INACTIVE,2024-10-07 05:16:31
+B2BAG2021,Aarna Rama,+91 7127092310,aarna.rama@dailygreens.in,Ahmedabad,HORECA,0.75,2022-05-19,INACTIVE,2024-07-08 18:17:11
+B2BAG2022,Dharmajan Gera,+91 7073579759,dharmajan.gera@dailygreens.in,Bharuch,HORECA,3.43,2024-06-14,INACTIVE,2024-11-05 04:26:35
+B2BAG2023,Charvi Ram,+91 9840537136,charvi.ram@dailygreens.in,Rajkot,HORECA,4.51,2023-05-03,INACTIVE,2025-03-22 16:44:49
+B2BAG2024,Mohanlal Dhillon,+91 9539823823,mohanlal.dhillon@dailygreens.in,Bharuch,Wholesale,2.97,2021-07-04,ACTIVE,2025-10-03 15:44:36
+B2BAG2025,Mamooty Sarma,+91 9419941010,mamooty.sarma@dailygreens.in,Surat,Caterer,3.5,2023-01-08,ACTIVE,2024-10-13 05:29:43
+B2BAG2026,Farhan Bala,+91 9350304592,farhan.bala@dailygreens.in,Gandhinagar,Wholesale,4.12,2024-11-29,INACTIVE,2025-12-02 10:45:49
+B2BAG2027,Anvi Handa,+91 8959522789,anvi.handa@dailygreens.in,Ahmedabad,Wholesale,1.17,2021-04-20,INACTIVE,2024-06-05 09:11:19
+B2BAG2028,Raunak Shenoy,+91 8862772972,raunak.shenoy@dailygreens.in,Ahmedabad,HORECA,1.29,2023-10-07,INACTIVE,2023-12-02 18:29:06
+B2BAG2029,Shalv Mahal,+91 7643778111,shalv.mahal@dailygreens.in,Navsari,Caterer,4.65,2021-10-07,ACTIVE,2023-08-03 04:36:43
+B2BAG2030,Sahil Ramaswamy,+91 7096232159,sahil.ramaswamy@dailygreens.in,Bharuch,Retail Chain,4.69,2025-07-06,INACTIVE,2025-11-04 21:12:54
+B2BAG2031,Mishti Sane,+91 7962504938,mishti.sane@dailygreens.in,Gandhinagar,Caterer,2.49,2024-04-04,ACTIVE,2024-06-27 17:43:50
+B2BAG2032,Vaibhav Dora,+91 8211517486,vaibhav.dora@dailygreens.in,Surat,HORECA,1.32,2025-08-18,ACTIVE,2025-11-21 22:13:46
+B2BAG2033,Aarush Lal,+91 8037828495,aarush.lal@dailygreens.in,Vadodara,Retail Chain,2.96,2024-01-27,INACTIVE,2025-11-21 16:50:50
+B2BAG2034,Vihaan Dua,+91 9368138941,vihaan.dua@dailygreens.in,Navsari,Retail Chain,1.82,2024-07-26,INACTIVE,2024-08-14 22:05:37
+B2BAG2035,Uthkarsh Vora,+91 7405804575,uthkarsh.vora@dailygreens.in,Anand,Caterer,0.91,2022-08-22,INACTIVE,2025-06-14 04:24:01
+B2BAG2036,Raunak Bhattacharyya,+91 9226733215,raunak.bhattacharyya@dailygreens.in,Surat,HORECA,0.59,2025-06-27,INACTIVE,2025-11-25 11:25:42
+B2BAG2037,Yuvaan Chakraborty,+91 7169716806,yuvaan.chakraborty@dailygreens.in,Gandhinagar,HORECA,0.53,2022-02-20,INACTIVE,2024-04-05 16:10:45
+B2BAG2038,Misha Ratti,+91 9599997674,misha.ratti@dailygreens.in,Rajkot,Retail Chain,1.18,2022-02-14,ACTIVE,2022-06-29 10:27:52
+B2BAG2039,Mamooty Jayaraman,+91 8116266123,mamooty.jayaraman@dailygreens.in,Anand,HORECA,2.05,2024-03-18,ACTIVE,2025-10-19 19:41:50
+B2BAG2040,Adira Kadakia,+91 7359351080,adira.kadakia@dailygreens.in,Bharuch,Retail Chain,1.76,2024-10-20,ACTIVE,2025-04-17 22:30:44
+B2BAG2041,Uthkarsh Sangha,+91 9781530488,uthkarsh.sangha@dailygreens.in,Anand,Wholesale,2.81,2021-04-17,ACTIVE,2025-06-12 23:13:46
+B2BAG2042,Charvi Sangha,+91 7269862227,charvi.sangha@dailygreens.in,Rajkot,Caterer,4.07,2025-02-15,INACTIVE,2025-04-19 08:06:42
+B2BAG2043,Zain Grover,+91 9444607659,zain.grover@dailygreens.in,Rajkot,Caterer,2.25,2024-09-17,INACTIVE,2025-08-03 02:43:13
+B2BAG2044,Pranay Karpe,+91 9481567723,pranay.karpe@dailygreens.in,Ahmedabad,HORECA,1.59,2024-08-05,ACTIVE,2025-06-20 10:06:00
+B2BAG2045,Rania Suresh,+91 7366999834,rania.suresh@dailygreens.in,Vadodara,Caterer,1.91,2024-11-28,INACTIVE,2025-07-30 04:08:40
+B2BAG2046,Zeeshan Datta,+91 7567158501,zeeshan.datta@dailygreens.in,Anand,Caterer,4.29,2021-02-26,INACTIVE,2022-06-26 23:38:34
+B2BAG2047,Vivaan Bhakta,+91 9238550417,vivaan.bhakta@dailygreens.in,Ahmedabad,Retail Chain,4.58,2021-12-31,ACTIVE,2025-06-23 05:35:54
+B2BAG2048,Onkar Vasa,+91 7782599087,onkar.vasa@dailygreens.in,Bharuch,Wholesale,2.89,2023-02-01,ACTIVE,2024-07-12 04:00:57
+B2BAG2049,Jayant Deol,+91 9856323614,jayant.deol@dailygreens.in,Ahmedabad,Wholesale,2.93,2023-02-24,INACTIVE,2025-09-04 18:27:40
+B2BAG2050,Amani Kale,+91 7874479083,amani.kale@dailygreens.in,Ahmedabad,HORECA,0.81,2023-03-22,INACTIVE,2025-07-04 18:44:23
+B2BAG2051,Aarna Bava,+91 8649501023,aarna.bava@dailygreens.in,Gandhinagar,HORECA,0.71,2023-06-24,INACTIVE,2025-09-17 01:04:02
+B2BAG2052,Anay Mann,+91 9074472759,anay.mann@dailygreens.in,Ahmedabad,Caterer,3.0,2023-10-23,INACTIVE,2025-10-05 06:11:13
+B2BAG2053,Drishya Swamy,+91 7736516019,drishya.swamy@dailygreens.in,Surat,HORECA,1.91,2021-07-09,INACTIVE,2023-08-06 21:06:34
+B2BAG2054,Ela Ray,+91 9703633477,ela.ray@dailygreens.in,Surat,HORECA,0.84,2021-01-22,INACTIVE,2025-03-27 19:36:06
+B2BAG2055,Madhup Raval,+91 8459692688,madhup.raval@dailygreens.in,Vadodara,HORECA,4.86,2022-12-13,ACTIVE,2023-06-10 23:56:18
+B2BAG2056,Vihaan Singhal,+91 8537940431,vihaan.singhal@dailygreens.in,Vadodara,Caterer,2.57,2024-06-20,ACTIVE,2025-06-30 09:23:33
+B2BAG2057,Shlok Char,+91 8181827280,shlok.char@dailygreens.in,Ahmedabad,HORECA,0.88,2023-01-11,INACTIVE,2025-10-12 15:47:02
+B2BAG2058,Hazel Sridhar,+91 9942497265,hazel.sridhar@dailygreens.in,Surat,HORECA,2.61,2023-09-16,INACTIVE,2024-01-28 14:52:31
+B2BAG2059,Inaaya  Sandhu,+91 7435572194,inaaya..sandhu@dailygreens.in,Vadodara,Retail Chain,2.07,2024-03-12,INACTIVE,2024-04-25 16:01:10
+B2BAG2060,Jiya Jaggi,+91 7291846862,jiya.jaggi@dailygreens.in,Vadodara,HORECA,2.85,2022-06-21,INACTIVE,2023-10-11 19:39:20

@@ -1,0 +1,45 @@
+# Backend Configuration Constants
+# These constants are used by the backend API service
+
+app:
+  name: "Zuna Backend API"
+  version: "0.1.0"
+  description: "Backend API for Zuna"
+  title: "Zuna Backend API"
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+  reload: true  # Overridden by MODE in settings
+
+api:
+  prefix: "/api"
+  docs_url: "/docs"
+  redoc_url: "/redoc"
+  openapi_url: "/openapi.json"
+
+conversation:
+  max_messages: 1000
+  default_context_length: 10
+
+storage:
+  type: "in_memory"  # Can be: in_memory, redis, postgres
+  cleanup_interval_seconds: 3600
+
+timeouts:
+  engine_request_seconds: 30
+  client_request_seconds: 60
+
+logging:
+  level: "INFO"
+  format: "<green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> | <level>{message}</level>"
+  colorize: true
+  serialize: false
+  backtrace: true
+  diagnose: true
+  rotation: "100 MB"
+  retention: "10 days"
+  compression: "zip"
+
+health:
+  check_interval_seconds: 10

@@ -1,0 +1,51 @@
+vendor_id,vendor_name,vendor_category,phone,email,billing_address,gst_no,pan_no,city,status,created_at
+ECOMV3001,Sanghvi and Sons,Courier,+91 9619993980,sanghviandsons@ecomvendor.in,"H.No. 09, Warrior Zila, Jamalpur 563640",247424308131116,PNSCK2415J,Nadiad,INACTIVE,2025-12-02 11:03:52
+ECOMV3002,"Raval, Sami and Gour",Influencer,+91 7855227635,"raval,samiandgour@ecomvendor.in","H.No. 855, Khanna Chowk, Chittoor 775766",245842559266653,GBVZT7574M,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3003,Kashyap Inc,Ad Agency,+91 9441158545,kashyapinc@ecomvendor.in,"H.No. 042, Dash Nagar, Bhalswa Jahangir Pur 538682",248967066692896,CMAZB7965F,Bharuch,INACTIVE,2025-12-02 11:03:52
+ECOMV3004,"Bali, Dyal and Rastogi",Ad Agency,+91 9815777409,"bali,dyalandrastogi@ecomvendor.in","H.No. 786, Wagle Zila, Mahbubnagar-085347",249216331325858,WYNNX9714X,Navsari,INACTIVE,2025-12-02 11:03:52
+ECOMV3005,Dugar-Balasubramanian,Tech,+91 7157238142,dugar-balasubramanian@ecomvendor.in,"14/44, Singh Ganj, Parbhani-926626",242832285004388,MFKRF4964M,Rajkot,INACTIVE,2025-12-02 11:03:52
+ECOMV3006,Raju LLC,Marketing,+91 8142220920,rajullc@ecomvendor.in,"38/334, Roy, Vijayawada 529927",242764486276134,TRQJK4386Y,Rajkot,ACTIVE,2025-12-02 11:03:52
+ECOMV3007,Keer-Sane,Courier,+91 8633769328,keer-sane@ecomvendor.in,"589, Thaker, Kochi-001311",246522552536004,DCZCD6239R,Bharuch,ACTIVE,2025-12-02 11:03:52
+ECOMV3008,Tara Ltd,Tech,+91 8481844530,taraltd@ecomvendor.in,"H.No. 879, Salvi Chowk, Aurangabad-090772",249808171626115,GMJNP5553M,Bharuch,ACTIVE,2025-12-02 11:03:52
+ECOMV3009,Malhotra-Dixit,Tech,+91 9250578045,malhotra-dixit@ecomvendor.in,"06/25, Master Nagar, Alappuzha 605068",240073535282269,RAWOE1887K,Bharuch,ACTIVE,2025-12-02 11:03:52
+ECOMV3010,"Arya, Suri and Yadav",Influencer,+91 7869770271,"arya,suriandyadav@ecomvendor.in","52/889, Chaudhary Chowk, Karaikudi-070419",240591052619632,OGPFK7358D,Gandhinagar,INACTIVE,2025-12-02 11:03:52
+ECOMV3011,Chadha LLC,Marketing,+91 8173735906,chadhallc@ecomvendor.in,"17/723, Mane Chowk, Berhampur 905330",249422715872640,MTXNA6996T,Ahmedabad,INACTIVE,2025-12-02 11:03:52
+ECOMV3012,Sandal PLC,Ad Agency,+91 8348884063,sandalplc@ecomvendor.in,"H.No. 864, Anne Chowk, Dehri-502313",245893326325176,BVOSW6548P,Navsari,ACTIVE,2025-12-02 11:03:52
+ECOMV3013,Shroff-Som,Marketing,+91 8731233157,shroff-som@ecomvendor.in,"15, Gola Marg, Bellary 150074",247241723408379,ULRNR8017V,Nadiad,INACTIVE,2025-12-02 11:03:52
+ECOMV3014,"Kurian, Choudhry and Walla",Tech,+91 7261788361,"kurian,choudhryandwalla@ecomvendor.in","20/12, Bora Nagar, Imphal-620767",247262350355486,JNLZD6821G,Ahmedabad,INACTIVE,2025-12-02 11:03:52
+ECOMV3015,"Gopal, Sawhney and Tak",Marketing,+91 7797251177,"gopal,sawhneyandtak@ecomvendor.in","71/869, Bobal Chowk, Pune-697365",249495568451792,DQXGB2216X,Ahmedabad,ACTIVE,2025-12-02 11:03:52
+ECOMV3016,"Kapur, Suresh and Sekhon",Marketing,+91 7250005493,"kapur,sureshandsekhon@ecomvendor.in","31/511, Vora Nagar, Kumbakonam 135719",247259619169470,WJMOG7776R,Vadodara,ACTIVE,2025-12-02 11:03:52
+ECOMV3017,Rajagopal Ltd,Courier,+91 9554016141,rajagopalltd@ecomvendor.in,"17, Gole Marg, Hajipur-760617",248257055490821,JDHII4417R,Ahmedabad,INACTIVE,2025-12-02 11:03:52
+ECOMV3018,Bhatti LLC,Tech,+91 9391724187,bhattillc@ecomvendor.in,"58, Mangat Road, Phagwara 782640",241128493280435,EODKJ6907V,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3019,"Chaudhari, Deshmukh and Sahota",Courier,+91 7641524640,"chaudhari,deshmukhandsahota@ecomvendor.in","402, Lal Circle, Satara 087717",248895500518791,ZOYFI6937Y,Bharuch,INACTIVE,2025-12-02 11:03:52
+ECOMV3020,Thakkar-Kamdar,Courier,+91 9913624978,thakkar-kamdar@ecomvendor.in,"H.No. 79, Upadhyay Nagar, Guna-868320",246398431983448,ZHFUF8297G,Nadiad,INACTIVE,2025-12-02 11:03:52
+ECOMV3021,Kaur Ltd,Ad Agency,+91 9047021914,kaurltd@ecomvendor.in,"H.No. 43, Agarwal Chowk, Bhilai-699289",245986166539107,FJLLI5690D,Bharuch,INACTIVE,2025-12-02 11:03:52
+ECOMV3022,Sabharwal-Bir,Ad Agency,+91 8610343813,sabharwal-bir@ecomvendor.in,"76/19, Dubey Ganj, Bhalswa Jahangir Pur-013109",240350819029721,OMLPK2311D,Nadiad,ACTIVE,2025-12-02 11:03:52
+ECOMV3023,"Kala, Bhatti and De",Ad Agency,+91 9990317589,"kala,bhattiandde@ecomvendor.in","H.No. 157, Mahajan Zila, Pali 227106",240973965898373,OJHRA1048R,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3024,"De, Jayaraman and Kakar",Courier,+91 9182630319,"de,jayaramanandkakar@ecomvendor.in","58, Babu Road, Udaipur-037497",240439067891210,WBAGH9067H,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3025,Kala LLC,Influencer,+91 8712527132,kalallc@ecomvendor.in,"12, Sarna Zila, Dewas 641557",241284429446227,XANGY1186M,Anand,INACTIVE,2025-12-02 11:03:52
+ECOMV3026,"Tank, Sami and Bir",Courier,+91 7051732642,"tank,samiandbir@ecomvendor.in","H.No. 913, Gulati, Gudivada 282976",246165988591542,VYVDB7808D,Vadodara,ACTIVE,2025-12-02 11:03:52
+ECOMV3027,Seshadri-Chakrabarti,Courier,+91 7387885940,seshadri-chakrabarti@ecomvendor.in,"11, Goswami Ganj, Ambattur-668949",249416947736991,PFOEB8968B,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3028,Ramakrishnan-Bobal,Influencer,+91 7094720623,ramakrishnan-bobal@ecomvendor.in,"77, Divan Road, Maheshtala-457195",249972524080062,VIMPY9120W,Rajkot,ACTIVE,2025-12-02 11:03:52
+ECOMV3029,Deshmukh-Mandal,Ad Agency,+91 7927761755,deshmukh-mandal@ecomvendor.in,"27, Bail Marg, Coimbatore-817717",249033846810109,LCYDI4746K,Anand,INACTIVE,2025-12-02 11:03:52
+ECOMV3030,Hans PLC,Courier,+91 7304578482,hansplc@ecomvendor.in,"H.No. 28, Manne Ganj, Kakinada 470042",241606675092723,NRIYE1059I,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3031,"Sangha, Saha and Grewal",Influencer,+91 7958369299,"sangha,sahaandgrewal@ecomvendor.in","12, Badami Nagar, Ahmednagar 680806",247718822879450,TGEAS5841J,Ahmedabad,ACTIVE,2025-12-02 11:03:52
+ECOMV3032,"Chana, Deshmukh and Bobal",Marketing,+91 9631875305,"chana,deshmukhandbobal@ecomvendor.in","76/753, Ratta Street, Gangtok-875990",245392424171012,ZLYDI7330K,Ahmedabad,INACTIVE,2025-12-02 11:03:52
+ECOMV3033,Krishnamurthy-Lanka,Tech,+91 7116254056,krishnamurthy-lanka@ecomvendor.in,"48/24, Tella Marg, Bhiwandi 880346",243920133946368,SBKNP9869O,Ahmedabad,INACTIVE,2025-12-02 11:03:52
+ECOMV3034,Bajaj-Sarna,Courier,+91 8510041042,bajaj-sarna@ecomvendor.in,"H.No. 693, Sundaram Circle, Pallavaram 810637",243550813871842,CHALC9573R,Gandhinagar,INACTIVE,2025-12-02 11:03:52
+ECOMV3035,Sani Group,Tech,+91 9996218284,sanigroup@ecomvendor.in,"50/82, Hegde Street, Silchar-405464",241072905593872,JTRJR1027C,Bharuch,INACTIVE,2025-12-02 11:03:52
+ECOMV3036,"Kulkarni, Gade and Rana",Tech,+91 7553374484,"kulkarni,gadeandrana@ecomvendor.in","52, Balasubramanian Road, Madurai 550493",244201150043117,RVZWM5710O,Anand,ACTIVE,2025-12-02 11:03:52
+ECOMV3037,Kar-Mahal,Marketing,+91 9883949803,kar-mahal@ecomvendor.in,"H.No. 277, Barad Nagar, Mathura 879283",241490277546593,QFCUY1417U,Ahmedabad,ACTIVE,2025-12-02 11:03:52
+ECOMV3038,"Chad, Rajan and Bhatia",Influencer,+91 7118594464,"chad,rajanandbhatia@ecomvendor.in","11/87, Walla Road, Pimpri-Chinchwad-432628",240399112564579,FLKEK3718L,Nadiad,INACTIVE,2025-12-02 11:03:52
+ECOMV3039,"Rau, Date and Cherian",Ad Agency,+91 7518579974,"rau,dateandcherian@ecomvendor.in","76/035, Khalsa Marg, Guntakal-424722",240081102440921,FWEZM3154X,Bharuch,INACTIVE,2025-12-02 11:03:52
+ECOMV3040,Zacharia Group,Ad Agency,+91 7810420208,zachariagroup@ecomvendor.in,"833, Dua Ganj, Kozhikode 032227",245891191156364,EKRBF4043N,Vadodara,INACTIVE,2025-12-02 11:03:52
+ECOMV3041,Guha-Bedi,Influencer,+91 7073587229,guha-bedi@ecomvendor.in,"34/41, Choudhary Chowk, Guna-819242",248487534824372,FGMQN7791E,Gandhinagar,INACTIVE,2025-12-02 11:03:52
+ECOMV3042,Bhakta-Tak,Marketing,+91 8971602956,bhakta-tak@ecomvendor.in,"597, Buch Path, Anand-209397",241531965620147,ZRBHV8444G,Anand,INACTIVE,2025-12-02 11:03:52
+ECOMV3043,Ranganathan-Mahal,Marketing,+91 7669398389,ranganathan-mahal@ecomvendor.in,"29/36, Kanda Chowk, Gwalior 554944",246713285103743,CSHPG2239G,Gandhinagar,INACTIVE,2025-12-02 11:03:52
+ECOMV3044,Sha-Dua,Influencer,+91 9689165611,sha-dua@ecomvendor.in,"726, Chandra Circle, Ahmednagar-483375",249781804171554,BALTL1862A,Bharuch,ACTIVE,2025-12-02 11:03:52
+ECOMV3045,Sant-Kapur,Influencer,+91 8850235031,sant-kapur@ecomvendor.in,"51/39, Yohannan Ganj, Aligarh-531264",249270080017865,IMNEP2401Q,Surat,INACTIVE,2025-12-02 11:03:52
+ECOMV3046,Halder-Saran,Ad Agency,+91 7821956384,halder-saran@ecomvendor.in,"H.No. 70, Khare Path, Nangloi Jat-591833",240633395461628,XMNNV9197A,Bharuch,INACTIVE,2025-12-02 11:03:52
+ECOMV3047,D’Alia LLC,Courier,+91 9884889577,d’aliallc@ecomvendor.in,"55/013, Singh Path, Gorakhpur-341137",249530712159011,UZRNP7567E,Rajkot,INACTIVE,2025-12-02 11:03:52
+ECOMV3048,Tara Ltd,Influencer,+91 7732908371,taraltd@ecomvendor.in,"22/017, Tank Ganj, Cuttack-068686",247886493431958,MPKVT5362W,Nadiad,ACTIVE,2025-12-02 11:03:52
+ECOMV3049,Contractor-Acharya,Influencer,+91 8174381893,contractor-acharya@ecomvendor.in,"96/48, Jani Circle, Hindupur-568192",249203967056118,SYNWI3952M,Nadiad,ACTIVE,2025-12-02 11:03:52
+ECOMV3050,"Mane, Sidhu and Gandhi",Ad Agency,+91 8232995315,"mane,sidhuandgandhi@ecomvendor.in","H.No. 298, Mannan Road, Hajipur 509327",240470699791278,IMFDU1436K,Anand,ACTIVE,2025-12-02 11:03:52

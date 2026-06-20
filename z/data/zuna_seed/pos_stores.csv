@@ -1,0 +1,5 @@
+store_id,city,region,first_active_date,last_online
+STORE_AHD_001,Ahmedabad,Ahmedabad,2025-10-05 11:42:36,2025-11-25 18:25:15
+STORE_RJT_001,Rajkot,Rajkot,2025-09-28 19:45:24,2025-11-27 22:30:34
+STORE_SUR_001,Surat,Surat,2025-10-02 03:21:36,2025-12-01 21:23:23
+STORE_VDR_001,Vadodara,Vadodara,2025-09-20 10:22:30,2025-11-30 07:04:25

@@ -1,0 +1,47 @@
+# Engine Configuration Constants
+# These constants are used by the engine processing service
+
+app:
+  name: "Zuna Engine"
+  version: "0.1.0"
+  description: "Message processing engine for Zuna"
+  title: "Zuna Engine API"
+
+server:
+  host: "0.0.0.0"
+  port: 8001
+  reload: true  # Overridden by MODE in settings
+
+processor:
+  type: "echo"  # Can be: echo, llm, hybrid
+  max_message_length: 10000
+  response_prefix: "Echo: "
+
+processing:
+  timeout_seconds: 25
+  max_retries: 3
+  retry_delay_seconds: 1
+
+metadata:
+  include_timestamp: true
+  include_processing_type: true
+  include_message_length: true
+
+security:
+  # Only allow requests from backend service
+  allowed_origins_internal: true
+  max_request_size_mb: 10
+
+logging:
+  level: "INFO"
+  format: "<green>{time:YYYY-MM-DD HH:mm:ss.SSS}</green> | <level>{level: <8}</level> | <cyan>{name}</cyan>:<cyan>{function}</cyan>:<cyan>{line}</cyan> | <level>{message}</level>"
+  colorize: true
+  serialize: false
+  backtrace: true
+  diagnose: true
+  rotation: "100 MB"
+  retention: "10 days"
+  compression: "zip"
+
+health:
+  check_interval_seconds: 10

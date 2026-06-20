@@ -1,0 +1,101 @@
+customer_id,external_customer_code,first_name,last_name,email,phone,dob,gender,created_at,last_login,marketing_opt_in,preferred_language,status,source_channel
+CUST1001,EC10000,Azad,Bhardwaj,shlok.devi@example.com,+91 9019011530,1962-12-28,Male,2025-06-03 05:05:00,2025-11-26 09:02:06,True,Gujarati,INACTIVE,Referral
+CUST1002,EC10001,Yuvaan,Gour,anahi.luthra@example.com,+91 9210873187,1983-08-09,Male,2025-10-14 18:49:24,2025-11-23 14:56:59,True,Hindi,ACTIVE,Website
+CUST1003,EC10002,Dhanush,Bail,rasha.sachdev@example.com,+91 7147543378,1958-05-09,Other,2024-12-16 06:49:14,2025-11-03 07:50:14,True,Hindi,ACTIVE,Website
+CUST1004,EC10003,Stuvan,Ram,dhruv.varkey@example.com,+91 9762019721,1963-04-05,Other,2025-06-26 02:35:38,2025-11-20 21:50:57,True,English,ACTIVE,Organic
+CUST1005,EC10004,Ishaan,Rout,sana.desai@example.com,+91 7247064024,1988-11-30,Male,2025-07-26 16:18:42,2025-11-13 23:50:52,False,English,INACTIVE,Website
+CUST1006,EC10005,Misha,Chokshi,mishti.chauhan@example.com,+91 8575977079,1975-06-05,Male,2025-06-17 18:29:14,2025-11-30 11:00:10,False,Hindi,INACTIVE,Organic
+CUST1007,EC10006,Dharmajan,Dhar,bhavin.bhatt@example.com,+91 9266181764,1981-10-12,Other,2025-07-19 02:06:08,2025-11-21 06:49:04,True,Gujarati,ACTIVE,Mobile App
+CUST1008,EC10007,Mamooty,Bassi,samar.sarma@example.com,+91 8257116304,1978-07-29,Male,2025-08-05 09:02:18,2025-11-19 10:37:38,True,Hindi,ACTIVE,Organic
+CUST1009,EC10008,Parinaaz,Lall,badal.sachar@example.com,+91 8194163163,1956-03-14,Other,2025-06-15 21:29:59,2025-11-25 18:00:46,False,Hindi,ACTIVE,Organic
+CUST1010,EC10009,Tushar,Krish,trisha.gara@example.com,+91 7629340582,1986-04-14,Female,2025-04-08 23:29:31,2025-11-07 04:28:41,True,Gujarati,INACTIVE,Mobile App
+CUST1011,EC10010,Prisha,Cherian,faiyaz.kumar@example.com,+91 9922815200,2006-10-17,Other,2025-02-27 03:41:14,2025-11-29 04:19:19,True,English,ACTIVE,Website
+CUST1012,EC10011,Himmat,Char,ayesha.bala@example.com,+91 8536484659,2000-03-11,Male,2025-09-16 13:35:47,2025-11-28 11:56:24,True,English,INACTIVE,Organic
+CUST1013,EC10012,Ranbir,Devan,onkar.hari@example.com,+91 8948164349,1991-05-24,Female,2025-11-29 16:15:31,2025-11-17 22:09:41,True,Gujarati,INACTIVE,Mobile App
+CUST1014,EC10013,Advik,Ben,nitya.chaudhary@example.com,+91 9640176467,1997-11-09,Male,2025-06-30 18:28:00,2025-11-06 15:48:38,False,Hindi,INACTIVE,Mobile App
+CUST1015,EC10014,Nirvaan,Kulkarni,tejas.sehgal@example.com,+91 7595328977,2000-12-10,Other,2025-03-28 06:23:36,2025-11-07 16:52:02,True,Hindi,INACTIVE,Website
+CUST1016,EC10015,Ira,Dubey,jayesh.randhawa@example.com,+91 8712955449,1970-04-13,Female,2025-02-02 20:50:11,2025-11-21 23:10:17,True,Gujarati,ACTIVE,Organic
+CUST1017,EC10016,Seher,Dey,samarth.karan@example.com,+91 7935855741,1958-01-16,Other,2024-12-27 22:18:36,2025-11-25 05:13:05,True,Hindi,ACTIVE,Mobile App
+CUST1018,EC10017,Zoya,Kapur,nishith.contractor@example.com,+91 8206003258,1988-01-26,Female,2025-08-16 03:38:53,2025-11-04 05:59:36,False,Hindi,ACTIVE,Organic
+CUST1019,EC10018,Darshit,Bajwa,aarna.golla@example.com,+91 7793581095,1968-01-09,Other,2025-05-07 09:09:34,2025-11-04 13:13:31,True,English,INACTIVE,Referral
+CUST1020,EC10019,Shray,Din,vritika.sengupta@example.com,+91 7991283288,1993-05-13,Other,2025-06-09 07:11:21,2025-11-06 10:18:39,False,Gujarati,ACTIVE,Referral
+CUST1021,EC10020,Kabir,Khalsa,kashvi.dada@example.com,+91 8156099153,1960-04-17,Other,2025-08-02 21:58:31,2025-11-04 06:03:08,True,Gujarati,INACTIVE,Referral
+CUST1022,EC10021,Hazel,Brahmbhatt,vidur.butala@example.com,+91 9714652730,1998-12-19,Other,2025-08-11 01:43:16,2025-11-25 17:31:17,False,Hindi,INACTIVE,Referral
+CUST1023,EC10022,Anahita,Dugar,aaina.vala@example.com,+91 9033998282,2007-08-18,Other,2025-11-26 08:25:34,2025-12-01 10:16:05,False,Hindi,ACTIVE,Referral
+CUST1024,EC10023,Mahika,Sarraf,mannat.shere@example.com,+91 7546653405,1954-12-08,Other,2025-05-20 01:26:17,2025-11-03 11:22:33,False,English,ACTIVE,Mobile App
+CUST1025,EC10024,Rohan,Bhardwaj,dishani.kalla@example.com,+91 7958254542,1996-11-07,Female,2025-10-17 03:42:10,2025-11-21 05:59:54,True,English,INACTIVE,Mobile App
+CUST1026,EC10025,Aayush,Ramaswamy,taran.handa@example.com,+91 8425968799,1982-05-03,Female,2025-11-02 21:26:35,2025-11-07 06:35:44,False,Hindi,INACTIVE,Organic
+CUST1027,EC10026,Dharmajan,Tank,sara.vasa@example.com,+91 9869217718,1992-10-05,Other,2025-02-12 23:27:58,2025-11-29 03:15:31,True,Gujarati,ACTIVE,Website
+CUST1028,EC10027,Kashvi,Bhattacharyya,dhruv.sastry@example.com,+91 8485683977,1956-02-07,Female,2025-06-07 03:13:03,2025-11-17 14:37:18,False,Hindi,ACTIVE,Referral
+CUST1029,EC10028,Damini,Kale,romil.choudhary@example.com,+91 9329526434,1979-06-27,Male,2025-07-08 16:45:19,2025-11-13 22:21:17,True,Hindi,INACTIVE,Website
+CUST1030,EC10029,Akarsh,Master,bhamini.dyal@example.com,+91 9465549692,1970-02-08,Female,2025-02-17 09:03:00,2025-11-20 17:25:51,False,English,INACTIVE,Organic
+CUST1031,EC10030,Kiaan,Bhalla,prerak.mann@example.com,+91 7323979768,1964-01-30,Female,2025-06-15 04:54:50,2025-12-01 03:07:55,True,Gujarati,INACTIVE,Referral
+CUST1032,EC10031,Yuvraj ,Mann,divit.kuruvilla@example.com,+91 7975342262,2001-08-08,Male,2025-05-08 09:56:54,2025-11-08 05:36:11,True,Hindi,INACTIVE,Mobile App
+CUST1033,EC10032,Nirvi,Khanna,samar.sabharwal@example.com,+91 8086111367,1981-10-11,Female,2025-07-02 05:51:40,2025-11-23 08:59:31,True,Hindi,INACTIVE,Organic
+CUST1034,EC10033,Madhav,Dass,samar.sahni@example.com,+91 7714082226,1973-08-15,Female,2025-10-08 13:04:04,2025-12-01 02:48:19,True,Hindi,ACTIVE,Organic
+CUST1035,EC10034,Vaibhav,Dey,nitya.sani@example.com,+91 8859246745,1966-06-16,Male,2025-02-07 09:55:23,2025-11-03 19:04:58,True,Gujarati,ACTIVE,Referral
+CUST1036,EC10035,Zeeshan,Tailor,tiya.mander@example.com,+91 9428426338,2006-08-21,Other,2025-07-13 02:02:41,2025-11-09 20:09:38,True,English,INACTIVE,Referral
+CUST1037,EC10036,Shayak,Soman,shlok.lalla@example.com,+91 7533800573,2007-07-29,Other,2025-03-05 20:16:47,2025-11-05 01:09:57,True,Gujarati,INACTIVE,Referral
+CUST1038,EC10037,Aayush,Chaudhary,yasmin.thaman@example.com,+91 8983999747,1978-09-18,Other,2025-06-28 01:29:08,2025-11-05 06:30:51,True,English,INACTIVE,Website
+CUST1039,EC10038,Nitara,Sarna,rhea.majumdar@example.com,+91 7366306616,2007-10-19,Male,2025-05-30 01:21:06,2025-11-20 06:43:57,True,Hindi,ACTIVE,Organic
+CUST1040,EC10039,Yuvaan,Rattan,nirvaan.datta@example.com,+91 7318602480,2005-07-31,Female,2025-03-24 23:15:21,2025-12-02 08:40:59,True,English,INACTIVE,Website
+CUST1041,EC10040,Divit,Sem,arnav.kulkarni@example.com,+91 8704239790,1990-02-24,Female,2025-04-16 13:10:58,2025-11-13 16:35:44,True,Gujarati,INACTIVE,Mobile App
+CUST1042,EC10041,Riaan,Mallick,inaaya .dar@example.com,+91 9648045932,1960-09-24,Other,2025-11-14 11:10:03,2025-12-01 22:02:28,True,Hindi,INACTIVE,Referral
+CUST1043,EC10042,Tanya,Zacharia,kabir.kannan@example.com,+91 8265941196,2004-03-27,Other,2025-02-03 22:25:17,2025-11-24 09:12:45,False,Hindi,ACTIVE,Referral
+CUST1044,EC10043,Zoya,Kant,dishani.srinivasan@example.com,+91 7261885988,1969-03-10,Male,2025-03-24 11:14:31,2025-11-04 16:33:31,True,Hindi,ACTIVE,Referral
+CUST1045,EC10044,Charvi,Manne,piya.rattan@example.com,+91 8821597411,1967-09-15,Other,2025-01-24 21:01:29,2025-11-26 18:30:37,False,Hindi,ACTIVE,Organic
+CUST1046,EC10045,Dhanush,Mallick,dhruv.hans@example.com,+91 7931782904,1999-12-23,Other,2025-06-04 10:06:42,2025-11-06 13:55:52,True,Hindi,INACTIVE,Organic
+CUST1047,EC10046,Ayesha,Kara,nitya.batta@example.com,+91 7095853183,1963-01-11,Male,2024-12-05 00:46:24,2025-11-13 08:54:15,False,English,ACTIVE,Website
+CUST1048,EC10047,Raunak,Bains,jayant.bala@example.com,+91 8895969067,1988-05-11,Male,2025-11-05 22:44:58,2025-11-13 00:35:45,True,English,INACTIVE,Organic
+CUST1049,EC10048,Adira,Bali,charvi.dugal@example.com,+91 8510227521,1976-08-25,Male,2025-05-28 02:38:45,2025-11-15 02:37:09,False,Hindi,ACTIVE,Website
+CUST1050,EC10049,Emir,Khalsa,mishti.rana@example.com,+91 8897918650,1959-06-08,Female,2025-06-15 08:24:19,2025-11-15 14:35:59,False,English,ACTIVE,Mobile App
+CUST1051,EC10050,Navya,Lalla,aarush.andra@example.com,+91 9672687964,1959-02-24,Other,2024-12-13 09:12:06,2025-11-03 03:36:02,False,Gujarati,ACTIVE,Organic
+CUST1052,EC10051,Divij,Comar,nakul.balan@example.com,+91 7494342299,2001-09-07,Other,2025-08-07 06:00:43,2025-11-10 14:02:01,False,English,INACTIVE,Referral
+CUST1053,EC10052,Saira,Bhargava,raghav.tella@example.com,+91 9508039437,1992-03-06,Other,2025-07-19 01:25:15,2025-11-03 07:10:42,False,Hindi,INACTIVE,Organic
+CUST1054,EC10053,Onkar,Agrawal,dhanush.batra@example.com,+91 8647809954,2004-05-13,Male,2025-10-17 05:35:08,2025-11-14 09:45:11,False,English,INACTIVE,Organic
+CUST1055,EC10054,Vedika,Solanki,nayantara.mangal@example.com,+91 8466449279,1965-12-02,Female,2025-01-13 17:07:25,2025-11-19 15:34:14,True,Hindi,ACTIVE,Website
+CUST1056,EC10055,Nitara,Ravi,ivana.venkatesh@example.com,+91 7792364569,2004-05-11,Female,2025-11-09 02:26:44,2025-11-06 04:35:42,True,Gujarati,INACTIVE,Organic
+CUST1057,EC10056,Kavya,Borde,anahita.sodhi@example.com,+91 7284267447,1988-05-26,Male,2025-12-02 02:10:42,2025-11-09 13:16:06,True,Hindi,INACTIVE,Referral
+CUST1058,EC10057,Priyansh,Dhawan,nishith.roy@example.com,+91 9436269913,1985-06-04,Male,2025-09-04 09:43:04,2025-11-22 19:37:41,False,Gujarati,INACTIVE,Mobile App
+CUST1059,EC10058,Reyansh,Edwin,uthkarsh.barad@example.com,+91 7670399761,1990-02-23,Male,2025-09-12 11:08:31,2025-11-17 11:10:16,True,English,ACTIVE,Website
+CUST1060,EC10059,Aaryahi,Mand,kaira.walia@example.com,+91 9175180132,1961-08-19,Female,2025-04-26 09:08:46,2025-11-28 21:03:59,False,Gujarati,INACTIVE,Organic
+CUST1061,EC10060,Shanaya,Thakkar,kiaan.chauhan@example.com,+91 8315034685,1981-12-11,Other,2025-04-08 21:37:51,2025-11-23 21:59:07,True,Gujarati,INACTIVE,Organic
+CUST1062,EC10061,Sahil,Kohli,azad.rau@example.com,+91 9590058595,1995-02-08,Female,2025-01-11 21:32:43,2025-11-16 13:19:35,True,Gujarati,ACTIVE,Organic
+CUST1063,EC10062,Drishya,Kashyap,seher.sankaran@example.com,+91 7152647060,1962-12-30,Female,2025-07-24 16:28:04,2025-11-11 09:23:11,True,Hindi,ACTIVE,Website
+CUST1064,EC10063,Rasha,Samra,mahika.shetty@example.com,+91 9855700009,1955-12-08,Other,2025-11-03 14:40:43,2025-11-27 04:56:51,True,English,ACTIVE,Referral
+CUST1065,EC10064,Vedika,Choudhury,mamooty.lal@example.com,+91 7834411945,1963-11-08,Other,2025-10-25 17:19:55,2025-11-20 15:37:40,False,Gujarati,INACTIVE,Website
+CUST1066,EC10065,Shray,Kakar,gatik.mander@example.com,+91 8853334068,1986-11-28,Other,2025-06-28 01:23:32,2025-11-30 14:12:34,True,Gujarati,ACTIVE,Organic
+CUST1067,EC10066,Uthkarsh,Magar,devansh.bir@example.com,+91 7090996621,1980-07-28,Female,2025-05-07 23:29:34,2025-11-22 09:03:08,True,Hindi,ACTIVE,Mobile App
+CUST1068,EC10067,Pihu,Randhawa,kavya.bhargava@example.com,+91 8039668032,1981-02-13,Other,2025-09-11 18:35:14,2025-11-30 06:32:16,True,Gujarati,ACTIVE,Website
+CUST1069,EC10068,Jiya,Viswanathan,indranil.sethi@example.com,+91 9703663595,2003-09-19,Male,2025-05-29 02:31:52,2025-11-24 09:30:04,True,Gujarati,INACTIVE,Referral
+CUST1070,EC10069,Pari,Arya,pari.tripathi@example.com,+91 8978589594,1989-02-07,Female,2025-10-13 16:27:52,2025-11-23 00:04:54,True,Hindi,INACTIVE,Referral
+CUST1071,EC10070,Rasha,Srinivasan,uthkarsh.goel@example.com,+91 8512214647,1985-12-11,Other,2025-11-24 18:51:48,2025-11-16 19:05:16,True,Hindi,INACTIVE,Organic
+CUST1072,EC10071,Heer,Sha,aarna.grewal@example.com,+91 7980757818,1995-07-22,Male,2025-05-26 03:15:10,2025-11-23 21:02:18,True,English,ACTIVE,Website
+CUST1073,EC10072,Nitara,Dutta,kismat.kata@example.com,+91 8655143982,1988-04-17,Other,2025-05-19 19:56:34,2025-11-25 19:44:19,False,Gujarati,INACTIVE,Referral
+CUST1074,EC10073,Lakshit,Saraf,nitya.sule@example.com,+91 7706031424,1997-07-24,Other,2025-06-17 06:55:35,2025-11-03 03:57:54,True,Gujarati,ACTIVE,Organic
+CUST1075,EC10074,Arnav,Zacharia,anahi.dutt@example.com,+91 9813571791,1957-03-25,Female,2025-09-12 19:51:05,2025-11-22 09:06:27,True,Gujarati,INACTIVE,Organic
+CUST1076,EC10075,Eshani,Bhavsar,kartik.sagar@example.com,+91 9630888427,2004-08-30,Female,2025-03-08 18:58:23,2025-11-25 11:04:17,False,Hindi,INACTIVE,Mobile App
+CUST1077,EC10076,Miraan,Toor,mamooty.mandal@example.com,+91 8881611309,1971-03-03,Other,2025-03-20 18:35:37,2025-11-25 02:31:37,False,Gujarati,ACTIVE,Referral
+CUST1078,EC10077,Trisha,Dhaliwal,prisha.batra@example.com,+91 7332310448,2000-02-15,Male,2025-09-07 14:18:21,2025-11-10 22:25:22,True,English,INACTIVE,Referral
+CUST1079,EC10078,Adira,Krish,jhanvi.krishna@example.com,+91 7732286725,1982-06-07,Male,2025-10-15 06:39:00,2025-11-18 19:18:17,True,Gujarati,INACTIVE,Organic
+CUST1080,EC10079,Alia,Bal,alia.das@example.com,+91 9331485743,1998-10-17,Other,2025-10-16 12:00:53,2025-11-28 20:14:10,True,Gujarati,ACTIVE,Organic
+CUST1081,EC10080,Tushar,De,yuvaan.agarwal@example.com,+91 7663354229,2005-07-16,Male,2025-09-17 02:57:36,2025-11-19 20:26:09,False,Gujarati,INACTIVE,Organic
+CUST1082,EC10081,Indrans,Baria,amira.vyas@example.com,+91 9661154900,1969-03-20,Male,2025-01-23 22:46:31,2025-11-05 15:25:31,True,English,ACTIVE,Referral
+CUST1083,EC10082,Nishith,Chopra,aarav.ray@example.com,+91 9421911590,1977-07-12,Female,2025-06-20 00:06:58,2025-11-23 16:57:29,False,English,INACTIVE,Referral
+CUST1084,EC10083,Pihu,Mammen,keya.chacko@example.com,+91 9671727825,1997-09-11,Other,2025-06-17 15:50:17,2025-11-27 21:42:25,True,English,ACTIVE,Mobile App
+CUST1085,EC10084,Abram,Butala,riya.soni@example.com,+91 9255203023,2000-12-06,Male,2025-02-01 03:42:10,2025-11-30 23:15:54,False,Gujarati,INACTIVE,Organic
+CUST1086,EC10085,Nirvi,Taneja,shray.ganesan@example.com,+91 8456210338,2007-10-22,Male,2025-09-20 09:19:57,2025-11-26 16:09:28,True,English,ACTIVE,Referral
+CUST1087,EC10086,Vivaan,Ranganathan,tanya.chopra@example.com,+91 7595969064,1958-09-03,Female,2025-06-19 06:31:03,2025-11-27 18:36:09,True,Hindi,ACTIVE,Website
+CUST1088,EC10087,Heer,Chokshi,charvi.talwar@example.com,+91 7597148679,2001-06-10,Other,2024-12-14 18:52:14,2025-11-23 16:45:08,True,English,ACTIVE,Mobile App
+CUST1089,EC10088,Kismat,Setty,keya.seshadri@example.com,+91 8944146514,1959-07-29,Female,2025-10-21 17:29:37,2025-12-01 14:10:11,False,Gujarati,ACTIVE,Referral
+CUST1090,EC10089,Vardaniya,Seshadri,aayush.joshi@example.com,+91 7499572398,1963-08-03,Male,2025-02-13 13:56:09,2025-11-06 10:31:45,False,Hindi,INACTIVE,Organic
+CUST1091,EC10090,Shray,Shanker,raunak.chowdhury@example.com,+91 8947370071,2007-07-08,Other,2025-03-31 11:04:08,2025-11-16 15:46:27,False,English,ACTIVE,Organic
+CUST1092,EC10091,Misha,Baral,jivika.thaker@example.com,+91 7630849458,1988-05-27,Female,2025-04-01 21:44:24,2025-11-24 10:48:08,False,Gujarati,ACTIVE,Mobile App
+CUST1093,EC10092,Aarav,Ray,inaaya .walia@example.com,+91 9474849958,1974-05-01,Other,2025-06-30 14:22:06,2025-11-21 16:14:30,False,Hindi,INACTIVE,Referral
+CUST1094,EC10093,Aradhya,Bhatia,faiyaz.sarraf@example.com,+91 8982120155,1984-11-06,Other,2025-09-21 09:56:44,2025-11-10 02:12:02,True,Hindi,ACTIVE,Website
+CUST1095,EC10094,Ritvik,Ramaswamy,eva.raval@example.com,+91 7785763026,1976-06-08,Female,2025-10-20 05:59:30,2025-11-30 20:08:36,True,Gujarati,INACTIVE,Organic
+CUST1096,EC10095,Uthkarsh,Dar,onkar.chaudhuri@example.com,+91 9620460897,1983-09-02,Male,2025-04-26 12:27:32,2025-11-04 16:28:47,False,English,INACTIVE,Organic
+CUST1097,EC10096,Mannat,Dass,ehsaan.joshi@example.com,+91 9660055045,1964-07-13,Male,2025-08-04 12:21:24,2025-11-21 10:10:45,True,Gujarati,ACTIVE,Referral
+CUST1098,EC10097,Amani,Chakraborty,priyansh.ahluwalia@example.com,+91 8974077920,1989-04-24,Female,2025-07-26 02:00:23,2025-11-20 19:46:44,True,Hindi,INACTIVE,Mobile App
+CUST1099,EC10098,Ishaan,Mammen,nitya.koshy@example.com,+91 7436936508,1958-10-13,Male,2025-01-03 18:46:15,2025-11-14 09:00:13,True,English,INACTIVE,Organic
+CUST1100,EC10099,Hridaan,Vaidya,divyansh.grewal@example.com,+91 7538988240,1982-01-04,Other,2025-05-16 00:14:10,2025-11-24 04:37:03,False,English,INACTIVE,Mobile App

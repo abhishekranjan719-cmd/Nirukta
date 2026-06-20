@@ -1,0 +1,32 @@
+# Frontend Configuration Constants
+# These constants are used by the frontend application
+
+app:
+  name: "Zuna"
+  version: "0.1.0"
+  description: "Real-time chat application with React frontend"
+
+ui:
+  theme:
+    primary_color: "#3b82f6"
+    secondary_color: "#8b5cf6"
+
+  messages:
+    max_length: 5000
+    placeholder: "Type your message..."
+
+  conversation:
+    max_title_length: 100
+    default_title: "New Conversation"
+
+  polling:
+    interval_ms: 1000
+
+api:
+  timeout_ms: 30000
+  retry_attempts: 3
+
+endpoints:
+  health: "/health"
+  chat: "/api/chat"
+  conversations: "/api/conversations"

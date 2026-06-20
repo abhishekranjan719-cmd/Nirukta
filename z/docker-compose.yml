@@ -1,0 +1,656 @@
+version: '3.8'
+
+networks:
+  chat_network:
+    driver: bridge
+    name: chat_network
+
+volumes:
+  # Consolidated Infrastructure
+  postgres_data:
+    driver: local
+  redis_data:
+    driver: local
+
+  # Database Services
+  mssql_data:
+    driver: local
+  mssql_logs:
+    driver: local
+
+  # Analytics & Storage
+  clickhouse_data:
+    driver: local
+  clickhouse_logs:
+    driver: local
+  minio_data:
+    driver: local
+
+  # Tools
+  sqlpad_data:
+    driver: local
+
+services:
+  # ============================================================================
+  # LAYER 1: CONSOLIDATED INFRASTRUCTURE
+  # ============================================================================
+
+  # PostgreSQL (Consolidated) - Single instance for Backend, Langfuse, LiteLLM
+  postgres:
+    image: postgres:18.1
+    container_name: chat-postgres
+    hostname: postgres
+    ports:
+      - "127.0.0.1:5432:5432"  # Localhost only for security
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: ${POSTGRES_DB:-postgres}
+      POSTGRES_INITDB_ARGS: "--encoding=UTF8 --locale=en_US.UTF-8"
+
+      # Database 1: Backend
+      MAIN_DB_NAME: ${MAIN_DB_NAME:-main_db}
+      MAIN_DB_USER: ${MAIN_DB_USER:-main_user}
+      MAIN_DB_PASSWORD: ${MAIN_DB_PASSWORD:-main_password}
+
+      # Database 2: Langfuse
+      LANGFUSE_DB_NAME: ${LANGFUSE_DB_NAME:-langfuse}
+      LANGFUSE_DB_USER: ${LANGFUSE_DB_USER:-langfuse}
+      LANGFUSE_DB_PASSWORD: ${LANGFUSE_DB_PASSWORD:-langfuse_password}
+
+      # Database 3: LiteLLM
+      LITELLM_DB_NAME: ${LITELLM_DB_NAME:-litellm}
+      LITELLM_DB_USER: ${LITELLM_DB_USER:-litellm}
+      LITELLM_DB_PASSWORD: ${LITELLM_DB_PASSWORD:-litellm_password}
+
+      # Database 4: LangGraph (Agent Memory & Checkpointing)
+      LANGGRAPH_DB_NAME: ${LANGGRAPH_DB_NAME:-langgraph}
+      LANGGRAPH_DB_USER: ${LANGGRAPH_DB_USER:-langgraph}
+      LANGGRAPH_DB_PASSWORD: ${LANGGRAPH_DB_PASSWORD:-langgraph_password_123}
+    volumes:
+      - postgres_data:/var/lib/postgresql
+      - ./scripts/postgres-init:/docker-entrypoint-initdb.d:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-postgres} -d ${POSTGRES_DB:-postgres}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # Redis Stack (Consolidated) - Single instance with multiple databases
+  # DB 0: Backend (cache, vector, pub/sub)
+  # DB 1: Langfuse (queue, cache)
+  # DB 2: LiteLLM (response cache)
+  redis-stack:
+    image: redis/redis-stack-server:latest
+    container_name: chat-redis-stack
+    hostname: redis-stack
+    ports:
+      - "127.0.0.1:6379:6379"  # Localhost only for security
+    command: >
+      redis-server
+      --protected-mode no
+      --maxmemory 1024mb
+      --maxmemory-policy noeviction
+      --appendonly yes
+      --save ""
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # ============================================================================
+  # LAYER 1: DATABASE SERVICES
+  # ============================================================================
+
+  # Microsoft SQL Server 2025
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2025-latest
+    container_name: chat-mssql
+    hostname: mssql
+    ports:
+      - "127.0.0.1:1433:1433"  # Localhost only for security
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${MSSQL_SA_PASSWORD:-SqlServer@1433}
+      MSSQL_PID: Express
+      MSSQL_MEMORY_LIMIT_MB: 2048
+    user: "0:0"  # Run as root to avoid permission issues
+    volumes:
+      - mssql_data:/var/opt/mssql/data
+      - mssql_logs:/var/opt/mssql/log
+    healthcheck:
+      test: [
+        "CMD-SHELL",
+        "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P ${MSSQL_SA_PASSWORD:-SqlServer@1433} -Q 'SELECT 1' -C -b"
+      ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 120s
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # ============================================================================
+  # LAYER 2: ANALYTICS & STORAGE
+  # ============================================================================
+
+  # ClickHouse (Required for Langfuse v3)
+  clickhouse:
+    image: clickhouse/clickhouse-server:latest
+    container_name: chat-clickhouse
+    hostname: clickhouse
+    ports:
+      - "127.0.0.1:8123:8123"  # HTTP interface
+      - "127.0.0.1:9000:9000"  # Native protocol
+    environment:
+      CLICKHOUSE_DB: langfuse
+      CLICKHOUSE_USER: langfuse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:-clickhouse_password}
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: 1
+    volumes:
+      - clickhouse_data:/var/lib/clickhouse
+      - clickhouse_logs:/var/log/clickhouse-server
+    healthcheck:
+      test: [
+        "CMD-SHELL",
+        "wget --quiet --tries=1 --spider http://localhost:8123/ping || exit 1"
+      ]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 60s
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # MinIO (S3-compatible storage for Langfuse v3)
+  minio:
+    image: minio/minio:latest
+    container_name: chat-minio
+    hostname: minio
+    ports:
+      - "9090:9000"  # MinIO API
+      - "9091:9001"  # MinIO Console
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-minioadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-minioadmin123}
+    command: server /data --console-address ":9001"
+    volumes:
+      - minio_data:/data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
+      start_period: 10s
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # MinIO Bucket Initialization
+  minio-init:
+    image: minio/mc:latest
+    container_name: chat-minio-init
+    hostname: minio-init
+    entrypoint: >
+      /bin/sh -c "
+      echo '=== MinIO Bucket Initialization ===' &&
+      echo 'Waiting for MinIO to be ready...' &&
+      until /usr/bin/mc alias set minio http://minio:9000 ${MINIO_ROOT_USER:-minioadmin} ${MINIO_ROOT_PASSWORD:-minioadmin123} > /dev/null 2>&1; do
+        echo 'Waiting for MinIO...';
+        sleep 2;
+      done &&
+      echo 'MinIO is ready!' &&
+      echo 'Creating bucket: langfuse' &&
+      /usr/bin/mc mb --ignore-existing minio/langfuse &&
+      echo 'Setting bucket policy to public' &&
+      /usr/bin/mc policy set public minio/langfuse || true &&
+      echo '✅ Bucket initialization complete!'
+      "
+    depends_on:
+      minio:
+        condition: service_healthy
+    networks:
+      - chat_network
+
+  # ============================================================================
+  # LAYER 3: OBSERVABILITY & GATEWAY
+  # ============================================================================
+
+  # Langfuse Web (v3)
+  langfuse-web:
+    image: langfuse/langfuse:3
+    container_name: chat-langfuse-web
+    hostname: langfuse-web
+    ports:
+      - "3000:3000"
+    environment:
+      # Database Configuration (Consolidated PostgreSQL)
+      DATABASE_URL: postgresql://${LANGFUSE_DB_USER:-langfuse}:${LANGFUSE_DB_PASSWORD:-langfuse_password}@postgres:5432/${LANGFUSE_DB_NAME:-langfuse}
+
+      # Redis Configuration (Consolidated Redis - DB 1)
+      REDIS_CONNECTION_STRING: redis://redis-stack:6379/1
+      REDIS_HOST: redis-stack
+      REDIS_PORT: "6379"
+      REDIS_AUTH: ""
+      REDIS_DB: "1"
+      REDIS_TLS_ENABLED: "false"
+
+      # ClickHouse Configuration
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: "9000"
+      CLICKHOUSE_USER: langfuse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:-clickhouse_password}
+      CLICKHOUSE_DB: langfuse
+      CLICKHOUSE_URL: http://clickhouse:8123
+      CLICKHOUSE_MIGRATION_URL: clickhouse://langfuse:${CLICKHOUSE_PASSWORD:-clickhouse_password}@clickhouse:9000/langfuse
+      CLICKHOUSE_CLUSTER_ENABLED: "false"
+
+      # S3/MinIO Configuration
+      LANGFUSE_USE_AZURE_BLOB: "false"
+      LANGFUSE_S3_EVENT_UPLOAD_BUCKET: langfuse
+      LANGFUSE_S3_EVENT_UPLOAD_REGION: auto
+      LANGFUSE_S3_EVENT_UPLOAD_ACCESS_KEY_ID: ${MINIO_ROOT_USER:-minioadmin}
+      LANGFUSE_S3_EVENT_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin123}
+      LANGFUSE_S3_EVENT_UPLOAD_ENDPOINT: http://minio:9000
+      LANGFUSE_S3_EVENT_UPLOAD_FORCE_PATH_STYLE: "true"
+      LANGFUSE_S3_EVENT_UPLOAD_PREFIX: events/
+
+      LANGFUSE_S3_MEDIA_UPLOAD_BUCKET: langfuse
+      LANGFUSE_S3_MEDIA_UPLOAD_REGION: auto
+      LANGFUSE_S3_MEDIA_UPLOAD_ACCESS_KEY_ID: ${MINIO_ROOT_USER:-minioadmin}
+      LANGFUSE_S3_MEDIA_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin123}
+      LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: http://minio:9000
+      LANGFUSE_S3_MEDIA_UPLOAD_FORCE_PATH_STYLE: "true"
+      LANGFUSE_S3_MEDIA_UPLOAD_PREFIX: media/
+
+      # Langfuse Core Configuration
+      NEXTAUTH_URL: http://localhost:3000
+      NEXTAUTH_SECRET: ${LANGFUSE_NEXTAUTH_SECRET}
+      ENCRYPTION_KEY: ${LANGFUSE_ENCRYPTION_KEY}
+      SALT: ${LANGFUSE_SALT}
+      HOSTNAME: "0.0.0.0"
+
+      # Initial Organization Setup
+      LANGFUSE_INIT_ORG_ID: ${LANGFUSE_INIT_ORG_ID:-zuna-org}
+      LANGFUSE_INIT_ORG_NAME: ${LANGFUSE_INIT_ORG_NAME:-Zuna Organization}
+
+      # Initial Project Setup
+      LANGFUSE_INIT_PROJECT_ID: ${LANGFUSE_INIT_PROJECT_ID:-zuna-project}
+      LANGFUSE_INIT_PROJECT_NAME: ${LANGFUSE_INIT_PROJECT_NAME:-Zuna Project}
+      LANGFUSE_INIT_PROJECT_PUBLIC_KEY: ${LANGFUSE_INIT_PROJECT_PUBLIC_KEY}
+      LANGFUSE_INIT_PROJECT_SECRET_KEY: ${LANGFUSE_INIT_PROJECT_SECRET_KEY}
+
+      # Initial User Setup
+      LANGFUSE_INIT_USER_EMAIL: ${LANGFUSE_INIT_USER_EMAIL:-admin@example.com}
+      LANGFUSE_INIT_USER_NAME: ${LANGFUSE_INIT_USER_NAME:-Admin}
+      LANGFUSE_INIT_USER_PASSWORD: ${LANGFUSE_INIT_USER_PASSWORD:-admin123}
+
+      # Logging
+      LOG_LEVEL: info
+      TELEMETRY_ENABLED: "false"
+      LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES: "true"
+    healthcheck:
+      test: [
+        "CMD-SHELL",
+        "wget --quiet --tries=1 --spider http://127.0.0.1:3000/api/public/health || exit 1"
+      ]
+      interval: 30s
+      timeout: 10s
+      retries: 15
+      start_period: 60s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis-stack:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+      minio-init:
+        condition: service_completed_successfully
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # Langfuse Worker (v3)
+  langfuse-worker:
+    image: langfuse/langfuse-worker:3
+    container_name: chat-langfuse-worker
+    hostname: langfuse-worker
+    ports:
+      - "127.0.0.1:3030:3030"
+    environment:
+      # Database Configuration (must match langfuse-web)
+      DATABASE_URL: postgresql://${LANGFUSE_DB_USER:-langfuse}:${LANGFUSE_DB_PASSWORD:-langfuse_password}@postgres:5432/${LANGFUSE_DB_NAME:-langfuse}
+
+      # Redis Configuration (must match langfuse-web)
+      REDIS_CONNECTION_STRING: redis://redis-stack:6379/1
+      REDIS_HOST: redis-stack
+      REDIS_PORT: "6379"
+      REDIS_AUTH: ""
+      REDIS_DB: "1"
+      REDIS_TLS_ENABLED: "false"
+
+      # ClickHouse Configuration (must match langfuse-web)
+      CLICKHOUSE_HOST: clickhouse
+      CLICKHOUSE_PORT: "9000"
+      CLICKHOUSE_USER: langfuse
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD:-clickhouse_password}
+      CLICKHOUSE_DB: langfuse
+      CLICKHOUSE_URL: http://clickhouse:8123
+      CLICKHOUSE_MIGRATION_URL: clickhouse://langfuse:${CLICKHOUSE_PASSWORD:-clickhouse_password}@clickhouse:9000/langfuse
+      CLICKHOUSE_CLUSTER_ENABLED: "false"
+
+      # S3/MinIO Configuration (must match langfuse-web)
+      LANGFUSE_USE_AZURE_BLOB: "false"
+      LANGFUSE_S3_EVENT_UPLOAD_BUCKET: langfuse
+      LANGFUSE_S3_EVENT_UPLOAD_REGION: auto
+      LANGFUSE_S3_EVENT_UPLOAD_ACCESS_KEY_ID: ${MINIO_ROOT_USER:-minioadmin}
+      LANGFUSE_S3_EVENT_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin123}
+      LANGFUSE_S3_EVENT_UPLOAD_ENDPOINT: http://minio:9000
+      LANGFUSE_S3_EVENT_UPLOAD_FORCE_PATH_STYLE: "true"
+      LANGFUSE_S3_EVENT_UPLOAD_PREFIX: events/
+
+      LANGFUSE_S3_MEDIA_UPLOAD_BUCKET: langfuse
+      LANGFUSE_S3_MEDIA_UPLOAD_REGION: auto
+      LANGFUSE_S3_MEDIA_UPLOAD_ACCESS_KEY_ID: ${MINIO_ROOT_USER:-minioadmin}
+      LANGFUSE_S3_MEDIA_UPLOAD_SECRET_ACCESS_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin123}
+      LANGFUSE_S3_MEDIA_UPLOAD_ENDPOINT: http://minio:9000
+      LANGFUSE_S3_MEDIA_UPLOAD_FORCE_PATH_STYLE: "true"
+      LANGFUSE_S3_MEDIA_UPLOAD_PREFIX: media/
+
+      # Langfuse Core Configuration (must match langfuse-web)
+      NEXTAUTH_URL: http://localhost:3000
+      NEXTAUTH_SECRET: ${LANGFUSE_NEXTAUTH_SECRET}
+      ENCRYPTION_KEY: ${LANGFUSE_ENCRYPTION_KEY}
+      SALT: ${LANGFUSE_SALT}
+
+      # Logging
+      LOG_LEVEL: info
+      TELEMETRY_ENABLED: "false"
+      LANGFUSE_ENABLE_EXPERIMENTAL_FEATURES: "true"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis-stack:
+        condition: service_healthy
+      clickhouse:
+        condition: service_healthy
+      minio:
+        condition: service_healthy
+      minio-init:
+        condition: service_completed_successfully
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # LiteLLM Proxy
+  litellm:
+    image: ghcr.io/berriai/litellm:main-stable
+    container_name: chat-litellm
+    hostname: litellm
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./configs/litellm/config.yaml:/app/config.yaml:ro
+    command: ["--config", "/app/config.yaml", "--port", "4000", "--num_workers", "4"]
+    environment:
+      # Database Configuration (Consolidated PostgreSQL)
+      DATABASE_URL: postgresql://${LITELLM_DB_USER:-litellm}:${LITELLM_DB_PASSWORD:-litellm_password}@postgres:5432/${LITELLM_DB_NAME:-litellm}
+
+      # Redis Configuration (Consolidated Redis - DB 2)
+      REDIS_HOST: redis-stack
+      REDIS_PORT: "6379"
+      REDIS_DB: "2"
+      REDIS_PASSWORD: ""
+
+      # LiteLLM Configuration
+      LITELLM_MASTER_KEY: ${LITELLM_MASTER_KEY:-sk-1234}
+      MASTER_KEY: ${LITELLM_MASTER_KEY:-sk-1234}
+      SALT_KEY: ${LITELLM_SALT_KEY:-sk-salt-1234}
+
+      # Azure OpenAI Configuration
+      AZURE_OPENAI_API_KEY: ${AZURE_OPENAI_API_KEY}
+      AZURE_OPENAI_ENDPOINT: ${AZURE_OPENAI_ENDPOINT}
+
+      # Azure AI Configuration
+      AZURE_AI_API_KEY: ${AZURE_AI_API_KEY}
+      AZURE_AI_API_BASE: ${AZURE_AI_API_BASE}
+
+      # Langfuse Integration
+      LANGFUSE_PUBLIC_KEY: ${LANGFUSE_PUBLIC_KEY}
+      LANGFUSE_SECRET_KEY: ${LANGFUSE_SECRET_KEY}
+      LANGFUSE_HOST: "http://langfuse-web:3000"
+
+      # Cache Configuration
+      LITELLM_CACHE_TYPE: redis
+      LITELLM_CACHE_TTL: "3600"
+
+      # UI Configuration
+      LITELLM_UI_USERNAME: ${LITELLM_UI_USERNAME:-admin}
+      LITELLM_UI_PASSWORD: ${LITELLM_UI_PASSWORD:-admin123}
+      LITELLM_UI_ENABLED: "true"
+
+      # Logging
+      LOG_LEVEL: info
+      LITELLM_LOG_LEVEL: info
+
+      # Health Check
+      SEPARATE_HEALTH_APP: "true"
+    healthcheck:
+      test: [
+        "CMD",
+        "python3",
+        "-c",
+        "import urllib.request, sys; r = urllib.request.urlopen('http://localhost:4000/health/liveliness', timeout=5); sys.exit(0 if r.status == 200 else 1)"
+      ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis-stack:
+        condition: service_healthy
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # ============================================================================
+  # LAYER 4: SUPPORT TOOLS
+  # ============================================================================
+
+  # SQLPad - Web-based SQL editor
+  sqlpad:
+    image: sqlpad/sqlpad:latest
+    container_name: chat-sqlpad
+    hostname: sqlpad
+    ports:
+      - "127.0.0.1:3010:3000"  # Localhost only
+    environment:
+      SQLPAD_ADMIN: ${SQLPAD_ADMIN:-admin@sqlpad.local}
+      SQLPAD_ADMIN_PASSWORD: ${SQLPAD_ADMIN_PASSWORD:-sqlpad123}
+      SQLPAD_APP_LOG_LEVEL: info
+
+      # Pre-configured Connection: PostgreSQL
+      SQLPAD_CONNECTIONS__postgres__name: Zuna PostgreSQL
+      SQLPAD_CONNECTIONS__postgres__driver: postgres
+      SQLPAD_CONNECTIONS__postgres__host: postgres
+      SQLPAD_CONNECTIONS__postgres__port: 5432
+      SQLPAD_CONNECTIONS__postgres__database: postgres
+      SQLPAD_CONNECTIONS__postgres__username: ${POSTGRES_USER:-postgres}
+      SQLPAD_CONNECTIONS__postgres__password: ${POSTGRES_PASSWORD:-postgres}
+
+      # Pre-configured Connection: MSSQL
+      SQLPAD_CONNECTIONS__mssql__name: Zuna MSSQL
+      SQLPAD_CONNECTIONS__mssql__driver: sqlserver
+      SQLPAD_CONNECTIONS__mssql__host: mssql
+      SQLPAD_CONNECTIONS__mssql__port: 1433
+      SQLPAD_CONNECTIONS__mssql__database: master
+      SQLPAD_CONNECTIONS__mssql__username: sa
+      SQLPAD_CONNECTIONS__mssql__password: ${MSSQL_SA_PASSWORD:-SqlServer@1433}
+    volumes:
+      - sqlpad_data:/var/lib/sqlpad
+    healthcheck:
+      test: ["CMD", "wget", "--quiet", "--tries=1", "--spider", "http://localhost:3000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 15s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mssql:
+        condition: service_healthy
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # ============================================================================
+  # LAYER 5: APPLICATION SERVICES
+  # ============================================================================
+
+  # Backend API
+  backend:
+    build:
+      context: .
+      dockerfile: dockerfiles/backend.Dockerfile
+    container_name: chat-backend
+    hostname: backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - ./configs:/configs
+      - /app/.venv
+    env_file:
+      - .env
+    environment:
+      - MODE=dev
+      - BACKEND_ENGINE_URL=http://engine:8001
+      - BACKEND_CORS_ORIGINS=["http://localhost:5173"]
+      - BACKEND_RELOAD=false
+
+      # Database Configuration (Consolidated PostgreSQL)
+      - DATABASE_URL=postgresql://${MAIN_DB_USER:-main_user}:${MAIN_DB_PASSWORD:-main_password}@postgres:5432/${MAIN_DB_NAME:-main_db}
+
+      # Redis Configuration (Consolidated Redis - DB 0)
+      - REDIS_URL=redis://redis-stack:6379/0
+
+      # LiteLLM Configuration
+      - LITELLM_API_URL=http://litellm:4000
+      - LITELLM_API_KEY=${LITELLM_MASTER_KEY:-sk-1234}
+
+      # Langfuse Configuration
+      - LANGFUSE_HOST=http://langfuse-web:3000
+      - LANGFUSE_PUBLIC_KEY=${LANGFUSE_PUBLIC_KEY:-}
+      - LANGFUSE_SECRET_KEY=${LANGFUSE_SECRET_KEY:-}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis-stack:
+        condition: service_healthy
+      engine:
+        condition: service_healthy
+      litellm:
+        condition: service_healthy
+      langfuse-web:
+        condition: service_healthy
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # Engine API
+  engine:
+    build:
+      context: .
+      dockerfile: dockerfiles/engine.Dockerfile
+    container_name: chat-engine
+    hostname: engine
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./engine:/app
+      - ./configs:/configs
+      - /app/.venv
+    env_file:
+      - .env
+    environment:
+      - MODE=dev
+      - ENGINE_CORS_ORIGINS=["http://backend:8000","http://localhost:8000"]
+      - ENGINE_RELOAD=false
+
+      # Database Configuration (Consolidated PostgreSQL)
+      - DATABASE_URL=postgresql://${MAIN_DB_USER:-main_user}:${MAIN_DB_PASSWORD:-main_password}@postgres:5432/${MAIN_DB_NAME:-main_db}
+
+      # Redis Configuration (Consolidated Redis - DB 0)
+      - REDIS_URL=redis://redis-stack:6379/0
+
+      # LiteLLM Configuration
+      - LITELLM_API_URL=http://litellm:4000
+      - LITELLM_API_KEY=${LITELLM_MASTER_KEY:-sk-1234}
+
+      # Langfuse Configuration
+      - LANGFUSE_HOST=http://langfuse-web:3000
+      - LANGFUSE_PUBLIC_KEY=${LANGFUSE_PUBLIC_KEY:-}
+      - LANGFUSE_SECRET_KEY=${LANGFUSE_SECRET_KEY:-}
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8001/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis-stack:
+        condition: service_healthy
+      litellm:
+        condition: service_healthy
+      langfuse-web:
+        condition: service_healthy
+    networks:
+      - chat_network
+    restart: unless-stopped
+
+  # Frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: dockerfiles/frontend.Dockerfile
+    container_name: chat-frontend
+    hostname: frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_BACKEND_URL=http://localhost:8000
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - chat_network
+    restart: unless-stopped

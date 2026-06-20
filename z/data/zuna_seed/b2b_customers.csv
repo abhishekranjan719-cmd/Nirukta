@@ -1,0 +1,51 @@
+customer_id,name,account_type,gst_number,primary_contact_name,primary_contact_phone,email,billing_address_id,delivery_address_id,customer_segment,credit_limit,payment_terms_days,assigned_sales_rep_id,created_at
+CUST1001,Shah Wholesale Produce,Wholesale,24AXIHH2181S7ZC,Misha Sachdev,+91 9338908386,lramesh@lad.com,ADDR2001,ADDR2001,Tier-1,252144.07,30,SR928,2025-10-11 15:39:39
+CUST1002,Vijay Sales Vegetables,Wholesale,24YZFWN5423Y6ZG,Oorja Rajagopal,+91 8155940781,xsabharwal@barad-balay.com,ADDR2002,ADDR2002,Tier-2,85460.09,30,SR949,2025-10-10 21:35:54
+CUST1003,Shah Wholesale Produce,Hotel/Catering,24LSGWC0341H2ZY,Alia Sant,+91 8525534192,ssrivastava@rastogi.com,ADDR2003,ADDR2003,Tier-3,378107.06,15,SR573,2025-10-30 05:36:37
+CUST1004,Desai Fruit Traders,Hotel/Catering,24UWRHV5030Z6ZZ,Kanav Chopra,+91 9395376724,bkulkarni@kant.com,ADDR2004,ADDR2004,Tier-1,160982.38,60,SR651,2025-12-01 23:56:37
+CUST1005,Mahadev Hotel & Caterers,Retailer,24NSMLH2871Y1ZH,Charvi Dugar,+91 7269166978,sahavanya@ravi-chanda.com,ADDR2005,ADDR2005,Tier-2,486985.27,7,SR796,2025-08-13 05:19:58
+CUST1006,Raj Organic Farms,Hotel/Catering,24VRYIY5146F8ZA,Chirag Bora,+91 7281489325,ztandon@setty.com,ADDR2006,ADDR2006,Tier-1,292720.56,60,SR100,2025-08-29 08:38:14
+CUST1007,Navneet Agro Exports,Exporter,24PADLZ4303S2ZF,Jiya Seshadri,+91 9822782489,miraansachar@biswas.net,ADDR2007,ADDR2007,Tier-2,483963.31,60,SR873,2025-08-21 00:49:54
+CUST1008,Raj Organic Farms,Wholesale,24WJMVU5787D4ZO,Mehul Cherian,+91 8098393010,janidhanuk@jain-shankar.org,ADDR2008,ADDR2008,Tier-1,80330.15,7,SR980,2025-11-03 23:31:07
+CUST1009,Rathod Grocers,Exporter,24QHIVP3829S8ZP,Parinaaz Dube,+91 8311656670,fmanne@kohli.com,ADDR2009,ADDR2009,Tier-3,344054.97,7,SR162,2025-11-29 14:29:40
+CUST1010,Desai Fruit Traders,Retailer,24ZDHGG8726F5Z3,Darshit Sule,+91 9781080132,bhargavatushar@mahajan-zacharia.info,ADDR2010,ADDR2010,Tier-2,268538.51,15,SR985,2025-08-29 07:41:16
+CUST1011,Desai Fruit Traders,Retailer,24FMAMI7468V8ZJ,Keya Balan,+91 8309805009,bhaminibhargava@sabharwal-gour.net,ADDR2011,ADDR2011,Tier-2,276282.67,60,SR261,2025-10-21 04:32:42
+CUST1012,Kumar Veg Wholesalers,Exporter,24CFCTC3619H1ZF,Jivin Iyer,+91 7998543534,hansh36@sengupta.com,ADDR2012,ADDR2012,Tier-2,108895.23,30,SR568,2025-11-11 07:44:23
+CUST1013,Rathod Grocers,Wholesale,24AOTSD1838I3ZW,Riya Guha,+91 9542784980,aliabanerjee@kashyap-sabharwal.net,ADDR2013,ADDR2013,Tier-3,417696.86,30,SR779,2025-11-08 20:56:22
+CUST1014,Patel Agro Suppliers,Hotel/Catering,24IDDXR2449G6ZN,Anay Lad,+91 7740164005,gokhaleneelofar@karpe.com,ADDR2014,ADDR2014,Tier-1,336701.02,30,SR265,2025-11-09 00:55:13
+CUST1015,Raj Organic Farms,Retailer,24RWNRA1128B6Z9,Mohanlal Dube,+91 8204505331,badal02@kohli.net,ADDR2015,ADDR2015,Tier-2,401052.31,45,SR735,2025-11-29 08:40:53
+CUST1016,Raj Organic Farms 6,Hotel/Catering,24HFZZF6025Z7ZP,Jayan Devi,+91 9160733754,mehul79@jain.biz,ADDR2016,ADDR2016,Tier-1,150315.6,15,SR508,2025-08-14 12:27:52
+CUST1017,Rathod Grocers 7,Retailer,24CYILU8685A2ZQ,Sahil Luthra,+91 7401965569,vsrivastava@bhardwaj-bhasin.net,ADDR2017,ADDR2017,Tier-3,102040.6,60,SR294,2025-11-14 03:30:58
+CUST1018,Mahadev Hotel & Caterers 8,Wholesale,24WNAQZ8356C6ZU,Yuvraj  Bandi,+91 7484656482,seherkonda@kannan.com,ADDR2018,ADDR2018,Tier-1,239200.85,45,SR793,2025-10-29 21:05:50
+CUST1019,Raj Organic Farms 9,Exporter,24TSJMR0443N6Z3,Reyansh Raja,+91 8387214895,hkanda@dhingra.com,ADDR2019,ADDR2019,Tier-1,418290.56,15,SR788,2025-11-02 06:14:36
+CUST1020,Mahadev Hotel & Caterers 10,Exporter,24ZGEAB3791O7ZM,Rania Dara,+91 8632016328,reddyela@ben.info,ADDR2020,ADDR2020,Tier-2,72598.27,15,SR968,2025-10-06 21:44:23
+CUST1021,Patel Agro Suppliers 1,Exporter,24EZOVQ8957T9Z1,Fateh Tank,+91 9774348734,vritikaganesh@ratti-sinha.com,ADDR2021,ADDR2021,Tier-2,84867.51,30,SR340,2025-10-10 02:18:02
+CUST1022,Mahadev Hotel & Caterers 2,Hotel/Catering,24KRCEE3623C7Z0,Kimaya Kari,+91 7760366909,senguptaamira@srinivasan.info,ADDR2022,ADDR2022,Tier-2,264640.88,30,SR405,2025-10-29 05:05:18
+CUST1023,Hiranandani Veg Distributors 3,Wholesale,24NRXXR9373I7Z5,Sahil Raval,+91 8562729806,shayak30@banik.com,ADDR2023,ADDR2023,Tier-3,303976.39,7,SR185,2025-08-24 13:29:48
+CUST1024,Shah Wholesale Produce 4,Hotel/Catering,24EOFBI6537K6ZY,Ehsaan Borra,+91 8417080531,wchadha@chahal.com,ADDR2024,ADDR2024,Tier-3,68116.16,7,SR353,2025-11-23 23:40:29
+CUST1025,Anand Mandi Traders 5,Retailer,24TEHEP1937W5ZX,Vaibhav Kapur,+91 7912419049,pranaybal@goswami-garg.com,ADDR2025,ADDR2025,Tier-3,458611.77,45,SR506,2025-10-06 19:03:13
+CUST1026,Raj Organic Farms 6,Exporter,24CSWUH1491Z1ZW,Charvi Keer,+91 7518506716,myra85@dyal-brahmbhatt.biz,ADDR2026,ADDR2026,Tier-2,336013.3,45,SR824,2025-10-03 04:55:23
+CUST1027,Shree Ram Supermarket 7,Retailer,24FXQUI9877N5ZU,Tara Wable,+91 9473799650,madhav74@krishnan.com,ADDR2027,ADDR2027,Tier-2,432928.78,15,SR599,2025-09-03 06:44:31
+CUST1028,Anand Mandi Traders 8,Exporter,24ZIKIT4808G2ZP,Kabir Bhatt,+91 8837770143,devandevansh@kadakia.org,ADDR2028,ADDR2028,Tier-2,361304.22,30,SR779,2025-10-22 04:37:35
+CUST1029,Navneet Agro Exports 9,Retailer,24PRQLN8557I5ZQ,Amira Buch,+91 9351823374,kgarde@balasubramanian.com,ADDR2029,ADDR2029,Tier-3,315314.11,60,SR711,2025-09-27 11:43:15
+CUST1030,Mahadev Hotel & Caterers 10,Hotel/Catering,24GJHLF4082I1ZD,Aaina Bajwa,+91 7271094777,okara@chada-grover.com,ADDR2030,ADDR2030,Tier-2,132963.65,7,SR358,2025-08-15 01:26:44
+CUST1031,Vijay Sales Vegetables 1,Retailer,24DCMPC9022Z5ZF,Ishaan Bhargava,+91 9869993867,vidur93@balan.com,ADDR2031,ADDR2031,Tier-2,183808.91,60,SR539,2025-10-25 10:15:23
+CUST1032,Mahadev Hotel & Caterers 2,Wholesale,24TBTXD3341F4ZL,Arnav Issac,+91 9067974034,hratti@sen.net,ADDR2032,ADDR2032,Tier-3,177223.27,45,SR172,2025-11-13 07:59:39
+CUST1033,Shah Wholesale Produce 3,Retailer,24IZZUS3618H3ZR,Purab Sami,+91 9024994717,gokul36@mannan-deo.com,ADDR2033,ADDR2033,Tier-3,186841.04,45,SR378,2025-08-24 11:38:53
+CUST1034,Mehta Fresh Mart 4,Wholesale,24POCTB6594A2ZO,Yasmin Badal,+91 7490278742,arhaanluthra@guha.com,ADDR2034,ADDR2034,Tier-3,246148.24,45,SR193,2025-10-01 03:43:06
+CUST1035,Soni Traders Surat 5,Wholesale,24NKKVD2567J7Z9,Vritika Jha,+91 8154516808,nirvaanchander@toor.com,ADDR2035,ADDR2035,Tier-2,235961.41,15,SR630,2025-11-02 22:15:12
+CUST1036,Rathod Grocers 6,Exporter,24YPUOY0348E5Z2,Gatik Ramachandran,+91 9093248086,lkhalsa@walia.biz,ADDR2036,ADDR2036,Tier-1,151115.3,7,SR572,2025-08-09 17:21:55
+CUST1037,Patel Agro Suppliers 7,Retailer,24PWJQW4677H8Z9,Elakshi Kale,+91 8398214658,mehul14@sunder.com,ADDR2037,ADDR2037,Tier-2,419247.26,30,SR843,2025-09-08 05:53:19
+CUST1038,Mahadev Hotel & Caterers 8,Exporter,24SVPEO8755R9ZY,Bhamini Thaker,+91 8339636057,yohannanreyansh@baral.com,ADDR2038,ADDR2038,Tier-3,461043.58,45,SR495,2025-10-31 19:50:21
+CUST1039,Shah Wholesale Produce 9,Retailer,24PBEQS5171Q8ZA,Jayan Butala,+91 8217459615,jhanvikaul@ranganathan-raju.com,ADDR2039,ADDR2039,Tier-3,436703.98,45,SR424,2025-11-10 18:35:40
+CUST1040,Shah Wholesale Produce 10,Retailer,24RBTCH4316D2Z2,Sana Iyengar,+91 7400504556,kdin@seth.com,ADDR2040,ADDR2040,Tier-1,159888.84,45,SR679,2025-11-06 18:59:02
+CUST1041,Shah Wholesale Produce 1,Hotel/Catering,24FFCTM9379E4Z3,Prisha Rege,+91 8407482175,hsama@chhabra-zachariah.net,ADDR2041,ADDR2041,Tier-3,184619.41,45,SR806,2025-11-12 13:47:46
+CUST1042,Mahadev Hotel & Caterers 2,Wholesale,24JGMPD3695S5ZS,Fateh Ben,+91 7640909743,swaminathanlagan@sachdeva.com,ADDR2042,ADDR2042,Tier-3,410869.38,15,SR751,2025-11-25 02:52:07
+CUST1043,Anand Mandi Traders 3,Hotel/Catering,24IVYXY2104Z8ZC,Lakshay Lanka,+91 7214562328,tejasbutala@cheema.info,ADDR2043,ADDR2043,Tier-2,288883.57,30,SR950,2025-10-08 12:34:35
+CUST1044,Shree Ram Supermarket 4,Hotel/Catering,24PZJXK1712Y4ZZ,Purab Dhar,+91 9604817549,issacneysa@rau.com,ADDR2044,ADDR2044,Tier-2,420087.79,30,SR210,2025-09-27 12:00:58
+CUST1045,Shah Wholesale Produce 5,Wholesale,24PATRK9317W5Z0,Ira Dass,+91 9004711382,rbadal@saxena.biz,ADDR2045,ADDR2045,Tier-2,254139.69,60,SR529,2025-08-24 17:55:26
+CUST1046,Navneet Agro Exports 6,Retailer,24NUDPT6405G8Z2,Samaira Sharaf,+91 8158506431,shaan42@master-dasgupta.com,ADDR2046,ADDR2046,Tier-2,91253.04,15,SR757,2025-11-26 13:32:46
+CUST1047,Shah Wholesale Produce 7,Retailer,24ABZKH2931Y9ZN,Bhavin Bhatti,+91 9529042284,walirohan@halder.biz,ADDR2047,ADDR2047,Tier-1,99466.86,7,SR234,2025-12-01 08:34:07
+CUST1048,Kumar Veg Wholesalers 8,Wholesale,24ZZHSK0240E7Z7,Sahil Khalsa,+91 7177589178,dbansal@ramaswamy.com,ADDR2048,ADDR2048,Tier-1,475437.04,7,SR844,2025-09-24 13:33:17
+CUST1049,Hiranandani Veg Distributors 9,Wholesale,24JOUAB7661P8ZE,Dharmajan Raj,+91 8921249985,shuklayashvi@chaudhary-konda.info,ADDR2049,ADDR2049,Tier-2,497582.49,60,SR401,2025-08-10 19:44:00
+CUST1050,Soni Traders Surat 10,Hotel/Catering,24TNDZW1836O4Z0,Miraya Sahota,+91 8661565452,ckarnik@ahluwalia-chauhan.com,ADDR2050,ADDR2050,Tier-3,465343.27,7,SR193,2025-10-23 16:40:45

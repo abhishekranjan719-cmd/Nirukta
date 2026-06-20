@@ -1,0 +1,196 @@
+# ============================================================================
+# LiteLLM Configuration File
+# ============================================================================
+# This is a placeholder configuration for LiteLLM service integration.
+# Update these values with your LLM provider API keys and configurations.
+# LiteLLM service will read this config on startup/restart.
+#
+# USAGE:
+# 1. Replace CHANGE_ME_* placeholders with actual API keys and values
+# 2. Uncomment needed providers (OpenAI, Claude, etc.)
+# 3. Restart LiteLLM service: docker-compose -f docker-compose.engine.yaml restart engine_litellm
+# 4. Verify config loaded: docker logs engine_litellm | grep -i config
+# ============================================================================
+
+# ==============================================================================
+# GENERAL CONFIGURATION
+# ==============================================================================
+
+general:
+  master_key: sk-litellm-master-key-min-32-chars-change-me
+  api_version: v1
+  proxy_batch_write_at: 10
+  disable_spend_logs: false
+  litellm_settings:
+    json_logs: false
+
+# ==============================================================================
+# MODEL CONFIGURATIONS
+# ==============================================================================
+
+model_list:
+  # Azure OpenAI - LLM Model (GPT-4)
+  # NOTE: Replace 'gpt-4-deployment' with your actual Azure deployment name
+  - model_name: gpt-4.1
+    litellm_params:
+      model: azure/gpt-4.1  # CHANGE THIS to your actual deployment name from Azure portal
+      api_key: os.environ/AZURE_OPENAI_API_KEY
+      api_base: os.environ/AZURE_OPENAI_ENDPOINT
+      api_version: "2025-01-01-preview"  # Updated to latest API version
+
+  # Azure OpenAI - Embedding Model
+  # NOTE: Replace 'text-embedding-3-small-deployment' with your actual Azure deployment name
+  - model_name: text-embedding-3-small
+    litellm_params:
+      model: azure/text-embedding-3-small  # CHANGE THIS to your actual deployment name
+      api_key: os.environ/AZURE_OPENAI_API_KEY
+      api_base: os.environ/AZURE_OPENAI_ENDPOINT
+      api_version: "2025-01-01-preview"  # Updated to latest API version
+
+  # Azure AI - Cohere Rerank v3.5 (For FSL Store Manager and retrieval reranking)
+  - model_name: cohere-rerank-v3.5
+    litellm_params:
+      model: azure_ai/cohere-rerank-v3.5
+      api_key: os.environ/AZURE_AI_API_KEY
+      api_base: os.environ/AZURE_AI_API_BASE
+
+# ==============================================================================
+# PROVIDER CONFIGURATIONS
+# ==============================================================================
+
+# Azure OpenAI Configuration (Using Environment Variables)
+azure_api_key: ${AZURE_OPENAI_API_KEY}
+azure_api_base: ${AZURE_OPENAI_ENDPOINT}
+azure_api_version: 2024-02-15-preview
+
+# Azure AI Configuration (Cohere Rerank via Azure AI)
+azure_ai_api_key: ${AZURE_AI_API_KEY}
+azure_ai_api_base: ${AZURE_AI_API_BASE}
+
+# ==============================================================================
+# CACHING CONFIGURATION
+# ==============================================================================
+
+cache:
+  type: redis  # redis, in-memory, or disable
+  host: engine_litellm_redis
+  port: 6381
+  db: 0
+  password: ""  # No password for local Redis
+  namespace: litellm_cache
+  ttl: 3600  # seconds
+
+# ==============================================================================
+# DATABASE CONFIGURATION
+# ==============================================================================
+
+database:
+  type: postgresql
+  host: engine_litellm_db
+  port: 5432
+  user: litellm
+  password: litellm123secure
+  database: litellm
+  # ssl_mode: require  # Uncomment for production
+
+# ==============================================================================
+# LOGGING CONFIGURATION
+# ==============================================================================
+
+logging:
+  level: debug  # debug, info, warning, error
+  handlers:
+    - console
+    - file
+  file_path: /var/log/litellm/litellm.log
+  format: json  # json or text
+
+# ==============================================================================
+# RATE LIMITING CONFIGURATION
+# ==============================================================================
+
+rate_limit:
+  enabled: true
+  requests_per_minute: 100
+  requests_per_day: 10000
+  # Key-based limits (per API key)
+  per_key_limit: 1000  # requests per minute per key
+
+# ==============================================================================
+# COST TRACKING & BUDGET CONFIGURATION
+# ==============================================================================
+
+cost_tracking:
+  enabled: true
+  budget_limit: 100.0   # USD per day
+  budget_alerts:
+    - threshold: 50     # Alert at 50% of budget
+    - threshold: 80     # Alert at 80% of budget
+    - threshold: 100    # Alert at 100% of budget
+
+# ==============================================================================
+# UI CONFIGURATION
+# ==============================================================================
+
+ui:
+  enabled: false  # Disabled for now, access via API proxy instead
+
+# ==============================================================================
+# SECURITY CONFIGURATION
+# ==============================================================================
+
+security:
+  api_keys:
+    - sk-litellm-api-key-ic-ai-engine-prod-2024
+    - sk-litellm-api-key-test-key-1
+  allowed_origins:
+    - "http://localhost:7777"   # Engine API
+    - "http://localhost:3000"   # Langfuse
+    - "http://localhost:8080"   # Add frontend origin
+    - "http://localhost:4000"   # LiteLLM itself
+  require_api_key: true
+
+# ==============================================================================
+# PROXY & NETWORK CONFIGURATION
+# ==============================================================================
+
+network:
+  # timeout: 30  # seconds
+  # retries: 3
+  ssl_verify: false  # Disabled for development/testing
+  # http_proxy: CHANGE_ME_HTTP_PROXY_URL_IF_REQUIRED
+  # https_proxy: CHANGE_ME_HTTPS_PROXY_URL_IF_REQUIRED
+
+# ==============================================================================
+# FALLBACK MODELS (OPTIONAL)
+# ==============================================================================
+
+# fallbacks:
+#   - from_model: gpt-4
+#     to_model: gpt-3.5-turbo
+#   - from_model: claude-3-opus
+#     to_model: claude-3-sonnet
+
+# ==============================================================================
+# CUSTOM PARAMETERS
+# ==============================================================================
+
+# custom_params:
+#   key1: value1
+#   key2: value2
+
+# ==============================================================================
+# NOTES
+# ============================================================================
+#
+# To update this config while LiteLLM is running:
+# 1. Edit this file with your values
+# 2. Restart the service:
+#    docker-compose -f docker-compose.engine.yaml restart engine_litellm
+#
+# To verify config was loaded:
+#    docker logs engine_litellm | grep -i "config\|loaded"
+#
+# For more details, see: https://docs.litellm.ai/
+#
+# ============================================================================
